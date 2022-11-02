@@ -11,6 +11,26 @@
 		AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC7D2912CB990094A260 /* SceneDelegate.swift */; };
 		AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC842912CB9B0094A260 /* Assets.xcassets */; };
 		AF47FC882912CB9B0094A260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC862912CB9B0094A260 /* LaunchScreen.storyboard */; };
+		AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC982912CD690094A260 /* StripeAssembly.swift */; };
+		AF47FC9C2912CD990094A260 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9A2912CD990094A260 /* StripeViewController.swift */; };
+		AF47FC9D2912CD990094A260 /* StripeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC9B2912CD990094A260 /* StripeViewController.xib */; };
+		AF47FC9F2912CDF50094A260 /* StripeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9E2912CDF50094A260 /* StripeViewOutput.swift */; };
+		AF47FCA12912CE070094A260 /* StripeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA02912CE070094A260 /* StripeViewInput.swift */; };
+		AF47FCA32912CE200094A260 /* StripePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA22912CE200094A260 /* StripePresenter.swift */; };
+		AF47FCA62912D04B0094A260 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA52912D04B0094A260 /* NetworkManager.swift */; };
+		AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA72912D0760094A260 /* MovieRequestEntity.swift */; };
+		AF47FCAB2912D0A00094A260 /* MovieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCAA2912D0A00094A260 /* MovieCategory.swift */; };
+		AF47FCAE2912D0D20094A260 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCAD2912D0D20094A260 /* Strings.swift */; };
+		AF47FCB22912D1B30094A260 /* StripeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */; };
+		AF47FCB32912D1B30094A260 /* StripeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */; };
+		AF47FCB72912D2350094A260 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB62912D2350094A260 /* DetailPresenter.swift */; };
+		AF47FCBF2912D2450094A260 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB82912D2450094A260 /* DetailTableViewController.swift */; };
+		AF47FCC02912D2450094A260 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */; };
+		AF47FCC12912D2450094A260 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */; };
+		AF47FCC22912D2450094A260 /* DetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCBC2912D2450094A260 /* DetailTableViewController.xib */; };
+		AF47FCC32912D2450094A260 /* DetailOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCBD2912D2450094A260 /* DetailOutput.swift */; };
+		AF47FCC42912D2450094A260 /* DetailInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCBE2912D2450094A260 /* DetailInput.swift */; };
+		AF47FCC62912D24E0094A260 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCC52912D24E0094A260 /* DetailAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +40,26 @@
 		AF47FC842912CB9B0094A260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF47FC872912CB9B0094A260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF47FC892912CB9B0094A260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF47FC982912CD690094A260 /* StripeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAssembly.swift; sourceTree = "<group>"; };
+		AF47FC9A2912CD990094A260 /* StripeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewController.swift; sourceTree = "<group>"; };
+		AF47FC9B2912CD990094A260 /* StripeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StripeViewController.xib; sourceTree = "<group>"; };
+		AF47FC9E2912CDF50094A260 /* StripeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewOutput.swift; sourceTree = "<group>"; };
+		AF47FCA02912CE070094A260 /* StripeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewInput.swift; sourceTree = "<group>"; };
+		AF47FCA22912CE200094A260 /* StripePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripePresenter.swift; sourceTree = "<group>"; };
+		AF47FCA52912D04B0094A260 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AF47FCA72912D0760094A260 /* MovieRequestEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRequestEntity.swift; sourceTree = "<group>"; };
+		AF47FCAA2912D0A00094A260 /* MovieCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCategory.swift; sourceTree = "<group>"; };
+		AF47FCAD2912D0D20094A260 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeTableViewCell.swift; sourceTree = "<group>"; };
+		AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StripeTableViewCell.xib; sourceTree = "<group>"; };
+		AF47FCB62912D2350094A260 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		AF47FCB82912D2450094A260 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		AF47FCBC2912D2450094A260 /* DetailTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewController.xib; sourceTree = "<group>"; };
+		AF47FCBD2912D2450094A260 /* DetailOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOutput.swift; sourceTree = "<group>"; };
+		AF47FCBE2912D2450094A260 /* DetailInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInput.swift; sourceTree = "<group>"; };
+		AF47FCC52912D24E0094A260 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +92,9 @@
 		AF47FC7A2912CB990094A260 /* TestTaskLampa */ = {
 			isa = PBXGroup;
 			children = (
+				AF47FCAC2912D0D20094A260 /* Strings */,
+				AF47FCA92912D0960094A260 /* Enums */,
+				AF47FCA42912D0360094A260 /* Network */,
 				AF47FC922912CC1E0094A260 /* Models */,
 				AF47FC912912CC080094A260 /* Modules */,
 				AF47FC902912CBD40094A260 /* Support */,
@@ -92,6 +135,7 @@
 		AF47FC922912CC1E0094A260 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AF47FCA72912D0760094A260 /* MovieRequestEntity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +143,9 @@
 		AF47FC932912CCAC0094A260 /* StripeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AF47FC972912CD520094A260 /* View */,
+				AF47FC962912CD490094A260 /* Presenter */,
+				AF47FC982912CD690094A260 /* StripeAssembly.swift */,
 			);
 			path = StripeViewController;
 			sourceTree = "<group>";
@@ -106,6 +153,9 @@
 		AF47FC942912CCDA0094A260 /* DetailViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AF47FCC52912D24E0094A260 /* DetailAssembly.swift */,
+				AF47FCB52912D21A0094A260 /* Presenter */,
+				AF47FCB42912D2080094A260 /* View */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -115,6 +165,88 @@
 			children = (
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		AF47FC962912CD490094A260 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCA22912CE200094A260 /* StripePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AF47FC972912CD520094A260 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCAF2912D18A0094A260 /* StripeViewCell */,
+				AF47FC9A2912CD990094A260 /* StripeViewController.swift */,
+				AF47FC9B2912CD990094A260 /* StripeViewController.xib */,
+				AF47FC9E2912CDF50094A260 /* StripeViewOutput.swift */,
+				AF47FCA02912CE070094A260 /* StripeViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF47FCA42912D0360094A260 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCA52912D04B0094A260 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AF47FCA92912D0960094A260 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCAA2912D0A00094A260 /* MovieCategory.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		AF47FCAC2912D0D20094A260 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCAD2912D0D20094A260 /* Strings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		AF47FCAF2912D18A0094A260 /* StripeViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */,
+				AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */,
+			);
+			path = StripeViewCell;
+			sourceTree = "<group>";
+		};
+		AF47FCB42912D2080094A260 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCB92912D2450094A260 /* Cell */,
+				AF47FCBE2912D2450094A260 /* DetailInput.swift */,
+				AF47FCBD2912D2450094A260 /* DetailOutput.swift */,
+				AF47FCB82912D2450094A260 /* DetailTableViewController.swift */,
+				AF47FCBC2912D2450094A260 /* DetailTableViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF47FCB52912D21A0094A260 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCB62912D2350094A260 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AF47FCB92912D2450094A260 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */,
+				AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +307,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF47FCC22912D2450094A260 /* DetailTableViewController.xib in Resources */,
+				AF47FC9D2912CD990094A260 /* StripeViewController.xib in Resources */,
+				AF47FCC12912D2450094A260 /* DetailTableViewCell.xib in Resources */,
 				AF47FC882912CB9B0094A260 /* LaunchScreen.storyboard in Resources */,
+				AF47FCB32912D1B30094A260 /* StripeTableViewCell.xib in Resources */,
 				AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,8 +323,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF47FCBF2912D2450094A260 /* DetailTableViewController.swift in Sources */,
+				AF47FCC32912D2450094A260 /* DetailOutput.swift in Sources */,
 				AF47FC7C2912CB990094A260 /* AppDelegate.swift in Sources */,
+				AF47FCAE2912D0D20094A260 /* Strings.swift in Sources */,
+				AF47FCC02912D2450094A260 /* DetailTableViewCell.swift in Sources */,
+				AF47FC9F2912CDF50094A260 /* StripeViewOutput.swift in Sources */,
+				AF47FCAB2912D0A00094A260 /* MovieCategory.swift in Sources */,
+				AF47FCA32912CE200094A260 /* StripePresenter.swift in Sources */,
 				AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */,
+				AF47FCB22912D1B30094A260 /* StripeTableViewCell.swift in Sources */,
+				AF47FCA62912D04B0094A260 /* NetworkManager.swift in Sources */,
+				AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */,
+				AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */,
+				AF47FCB72912D2350094A260 /* DetailPresenter.swift in Sources */,
+				AF47FCC42912D2450094A260 /* DetailInput.swift in Sources */,
+				AF47FC9C2912CD990094A260 /* StripeViewController.swift in Sources */,
+				AF47FCC62912D24E0094A260 /* DetailAssembly.swift in Sources */,
+				AF47FCA12912CE070094A260 /* StripeViewInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

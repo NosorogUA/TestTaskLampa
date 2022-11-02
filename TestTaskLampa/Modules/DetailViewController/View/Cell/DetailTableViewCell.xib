@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-VariableFont_wght.ttf">
+            <string>Raleway-Thin</string>
+            <string>RalewayRoman-Bold</string>
+            <string>RalewayRoman-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailTableViewCell" rowHeight="611" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="TestTaskLampa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="611"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="611"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NAN-Ux-7ha">
+                        <rect key="frame" x="16" y="103" width="346" height="218.5"/>
+                        <color key="backgroundColor" red="0.2476759405" green="0.65374514260000005" blue="0.63034510610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.71764705880000002" green="0.65374514260000005" blue="0.63034510610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NAN-Ux-7ha" secondAttribute="height" multiplier="106:67" id="PPu-uG-ChN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HF-dS-GSs">
+                        <rect key="frame" x="16" y="389" width="346" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="8cs-3d-EdJ"/>
+                        </constraints>
+                        <string key="text">r;krjrgj ssejr gsejrg sdijgsdjgsdfjg'dls;fg s'dfg sdfgjs dl;fgjks;dlgk s'd;gk sd;fggj;dlgj;ldskfjgl;ksdjg;sdgl;jsdfgjsd;gjs;dkljfg s dfgjsdlgjsdlfg</string>
+                        <fontDescription key="fontDescription" name="RalewayRoman-Regular" family="Raleway" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-oA-wYB">
+                        <rect key="frame" x="32" y="283.5" width="41.5" height="26"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-Bold" family="Raleway" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1s-cs-O7D">
+                        <rect key="frame" x="332" y="295.5" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="VnU-wd-Evq"/>
+                            <constraint firstAttribute="width" constant="14" id="oCP-f3-hj5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQE-sf-zkz">
+                        <rect key="frame" x="294" y="294" width="33" height="15.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2y-Xg-Y5n">
+                        <rect key="frame" x="16" y="343.5" width="346" height="37.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37.5" id="l29-i9-uRu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg1-Fu-Fx5">
+                        <rect key="frame" x="16" y="575" width="25" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="HaU-qU-KBF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1HF-dS-GSs" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="16" id="0hl-iX-L0R"/>
+                    <constraint firstItem="Hg1-Fu-Fx5" firstAttribute="top" secondItem="1HF-dS-GSs" secondAttribute="bottom" constant="16" id="AbJ-Ou-kkp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="X1s-cs-O7D" secondAttribute="trailing" constant="12" id="CTj-c1-9Uq"/>
+                    <constraint firstItem="95M-oA-wYB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="CuV-wZ-gi1"/>
+                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="16" id="H8g-pe-u9a"/>
+                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="bottom" secondItem="95M-oA-wYB" secondAttribute="bottom" constant="12" id="Lms-ti-9sf"/>
+                    <constraint firstAttribute="trailing" secondItem="R2y-Xg-Y5n" secondAttribute="trailing" constant="16" id="M7F-FB-NV5"/>
+                    <constraint firstItem="R2y-Xg-Y5n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WDD-p3-Abv"/>
+                    <constraint firstItem="X1s-cs-O7D" firstAttribute="leading" secondItem="JQE-sf-zkz" secondAttribute="trailing" constant="5" id="Zf8-gO-K7E"/>
+                    <constraint firstAttribute="right" secondItem="1HF-dS-GSs" secondAttribute="right" constant="16" id="eao-hP-k9Y"/>
+                    <constraint firstAttribute="right" secondItem="NAN-Ux-7ha" secondAttribute="right" constant="16" id="fyv-WK-hLk"/>
+                    <constraint firstItem="R2y-Xg-Y5n" firstAttribute="top" secondItem="NAN-Ux-7ha" secondAttribute="bottomMargin" constant="30" id="gQX-Pn-oQL"/>
+                    <constraint firstAttribute="bottom" secondItem="Hg1-Fu-Fx5" secondAttribute="bottom" constant="20" id="hgJ-pY-kha"/>
+                    <constraint firstItem="X1s-cs-O7D" firstAttribute="bottom" secondItem="NAN-Ux-7ha" secondAttribute="bottom" constant="-12" id="lba-jM-Agy"/>
+                    <constraint firstItem="1HF-dS-GSs" firstAttribute="top" secondItem="R2y-Xg-Y5n" secondAttribute="bottom" constant="8" id="tHd-eH-ifu"/>
+                    <constraint firstItem="JQE-sf-zkz" firstAttribute="bottom" secondItem="NAN-Ux-7ha" secondAttribute="bottom" constant="-12" id="tRD-xR-qcY"/>
+                    <constraint firstItem="Hg1-Fu-Fx5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uzr-sw-VHs"/>
+                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="103" id="wrF-Rv-ZwP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionTextLabel" destination="1HF-dS-GSs" id="T0Z-9j-BMZ"/>
+                <outlet property="posterImageView" destination="NAN-Ux-7ha" id="Eo2-7i-Ytd"/>
+                <outlet property="ratingTextLabel" destination="JQE-sf-zkz" id="q8x-l8-m8G"/>
+                <outlet property="titleTextLabel" destination="95M-oA-wYB" id="wkL-gX-fds"/>
+                <outlet property="yearTextLabel" destination="Hg1-Fu-Fx5" id="pzK-Mc-Pda"/>
+            </connections>
+            <point key="canvasLocation" x="317.39130434782612" y="151.67410714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

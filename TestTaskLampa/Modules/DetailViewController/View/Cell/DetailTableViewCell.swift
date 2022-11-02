@@ -11,7 +11,6 @@ import SDWebImage
 class DetailTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var titleTextLabel: UILabel!
-    @IBOutlet private weak var languageTextLabel: UILabel!
     @IBOutlet private weak var yearTextLabel: UILabel!
     @IBOutlet private weak var ratingTextLabel: UILabel!
     @IBOutlet private weak var descriptionTextLabel: UILabel!
@@ -66,5 +65,3 @@ class DetailTableViewCell: UITableViewCell {
         posterImageView.image = nil
     }
 }
-
-

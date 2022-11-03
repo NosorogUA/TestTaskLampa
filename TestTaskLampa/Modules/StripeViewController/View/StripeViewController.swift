@@ -21,6 +21,7 @@ class StripeViewController: UIViewController {
         setupNavigationBar()
         setupTableview()
         loadData()
+        print(DetailRowType.poster.rawValue)
     }
     
     override func viewWillAppear(_ animated: Bool) {

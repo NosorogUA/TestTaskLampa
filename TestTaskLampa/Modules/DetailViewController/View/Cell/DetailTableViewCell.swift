@@ -11,10 +11,7 @@ import SDWebImage
 class DetailTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var titleTextLabel: UILabel!
-    @IBOutlet private weak var yearTextLabel: UILabel!
     @IBOutlet private weak var ratingTextLabel: UILabel!
-    @IBOutlet private weak var descriptionTextLabel: UILabel!
-    @IBOutlet private weak var descriptionTitleTextLabel: UILabel!
      
     @IBOutlet private weak var posterImageView: UIImageView!
     @IBOutlet weak var starImageView: UIImageView!
@@ -43,37 +40,23 @@ class DetailTableViewCell: UITableViewCell {
         
         let titleFont = UIFont(name: UISettings.Font.boldFontName, size: 14)
         let descriptionLabelFont = UIFont(name: UISettings.Font.semiboldFontName, size: 12)
-        let descriptionFont = UIFont(name: UISettings.Font.regularFontName, size: 10)
-        let dataFont = UIFont(name: UISettings.Font.semiboldFontName, size: 10)
         
         titleTextLabel.font = titleFont
         titleTextLabel.textColor = UISettings.Color.white
-        descriptionTextLabel.font = descriptionFont
-        descriptionTextLabel.textColor = UISettings.Color.darkGrey
-        descriptionTitleTextLabel.font = descriptionLabelFont
-        descriptionTitleTextLabel.textColor = UISettings.Color.white
-        yearTextLabel.font = dataFont
-        yearTextLabel.textColor = UISettings.Color.orange
         ratingTextLabel.font = descriptionLabelFont
         ratingTextLabel.textColor = UISettings.Color.white
     }
     
-    func setup(title: String, description: String, year: String, rating: Int, imageUrl: URL?) {
+    func setup(title: String,  rating: Int, imageUrl: URL?) {
         titleTextLabel.text = title
-        descriptionTitleTextLabel.text = "\(Strings.Headers.description):"
-        yearTextLabel.text = "\(Strings.Headers.release): \(year)"
         ratingTextLabel.text = "\(rating.formatted())"
-        descriptionTextLabel.text = description
         posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground)
         starImageView.image = UIImage(systemName: "star.fill")
     }
     
     private func reset() {
         titleTextLabel.text = nil
-        descriptionTitleTextLabel.text = nil
-        yearTextLabel.text = nil
         ratingTextLabel.text = nil
-        descriptionTextLabel.text = nil
         posterImageView.image = nil
     }
 }

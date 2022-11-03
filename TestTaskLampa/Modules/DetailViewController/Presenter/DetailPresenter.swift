@@ -22,13 +22,16 @@ class DetailPresenter: DetailOutput {
     }
     
     func getRowsCount(_ section: Int) -> Int {
-        return 1
+        return 2
     }
     
-    func configureCell(_ cell: DetailTableViewCell) {
-        print("Try to setup cell in presenter")
+    func configureDetailCell(_ cell: DetailTableViewCell) {
         guard let posterPath = movie.posterPath else { return }
         let url = "https://image.tmdb.org/t/p/w500\(posterPath)"
-        cell.setup(title: movie.title, description: movie.overview, year: movie.releaseDate, rating: Int(movie.popularity), imageUrl: URL(string: url))
+        cell.setup(title: movie.title, rating: Int(movie.popularity), imageUrl: URL(string: url))
+    }
+    
+    func configureDetailInfoCell(_ cell: DetailInfoTableViewCell) {
+        cell.setup(description: movie.overview, year: movie.releaseDate)
     }
 }

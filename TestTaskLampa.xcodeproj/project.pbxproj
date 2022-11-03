@@ -35,6 +35,9 @@
 		AF47FCC62912D24E0094A260 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCC52912D24E0094A260 /* DetailAssembly.swift */; };
 		AF4E9714291404A1002F25DD /* Raleway-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF4E9713291404A1002F25DD /* Raleway-Font.ttf */; };
 		AF4E971629140584002F25DD /* UISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E971529140584002F25DD /* UISettings.swift */; };
+		AF51DEC029142025005B2B65 /* DetailRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51DEBF29142025005B2B65 /* DetailRowType.swift */; };
+		AF51DEC329142411005B2B65 /* DetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51DEC129142411005B2B65 /* DetailInfoTableViewCell.swift */; };
+		AF51DEC429142411005B2B65 /* DetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF51DEC229142411005B2B65 /* DetailInfoTableViewCell.xib */; };
 		DEE7775A75973801733F6AAE /* Pods_TestTaskLampa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFB7D2ABC7B0F3A8B9E7B44 /* Pods_TestTaskLampa.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,9 @@
 		AF47FCC52912D24E0094A260 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
 		AF4E9713291404A1002F25DD /* Raleway-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Font.ttf"; sourceTree = "<group>"; };
 		AF4E971529140584002F25DD /* UISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettings.swift; sourceTree = "<group>"; };
+		AF51DEBF29142025005B2B65 /* DetailRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowType.swift; sourceTree = "<group>"; };
+		AF51DEC129142411005B2B65 /* DetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoTableViewCell.swift; sourceTree = "<group>"; };
+		AF51DEC229142411005B2B65 /* DetailInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInfoTableViewCell.xib; sourceTree = "<group>"; };
 		FF3517C459B8A7263160AFFC /* Pods-TestTaskLampa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLampa.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskLampa/Pods-TestTaskLampa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				AF47FCAA2912D0A00094A260 /* MovieCategory.swift */,
+				AF51DEBF29142025005B2B65 /* DetailRowType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -281,6 +288,8 @@
 			children = (
 				AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */,
 				AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */,
+				AF51DEC129142411005B2B65 /* DetailInfoTableViewCell.swift */,
+				AF51DEC229142411005B2B65 /* DetailInfoTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -367,6 +376,7 @@
 				AF47FC882912CB9B0094A260 /* LaunchScreen.storyboard in Resources */,
 				AF47FCB32912D1B30094A260 /* StripeTableViewCell.xib in Resources */,
 				AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */,
+				AF51DEC429142411005B2B65 /* DetailInfoTableViewCell.xib in Resources */,
 				AF4E9714291404A1002F25DD /* Raleway-Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,12 +445,14 @@
 				AF47FCA62912D04B0094A260 /* NetworkManager.swift in Sources */,
 				AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */,
 				AF4E971629140584002F25DD /* UISettings.swift in Sources */,
+				AF51DEC329142411005B2B65 /* DetailInfoTableViewCell.swift in Sources */,
 				AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */,
 				AF47FCB72912D2350094A260 /* DetailPresenter.swift in Sources */,
 				AF47FCC42912D2450094A260 /* DetailInput.swift in Sources */,
 				AF47FC9C2912CD990094A260 /* StripeViewController.swift in Sources */,
 				AF47FCC62912D24E0094A260 /* DetailAssembly.swift in Sources */,
 				AF47FCA12912CE070094A260 /* StripeViewInput.swift in Sources */,
+				AF51DEC029142025005B2B65 /* DetailRowType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

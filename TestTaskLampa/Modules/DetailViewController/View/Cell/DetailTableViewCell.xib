@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Raleway-Font_wght.ttf">
-            <string>Raleway-Thin</string>
+        <array key="Raleway-Font.ttf">
             <string>RalewayRoman-Bold</string>
             <string>RalewayRoman-Regular</string>
+            <string>RalewayRoman-SemiBold</string>
         </array>
     </customFonts>
     <objects>
@@ -38,13 +38,13 @@
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="8cs-3d-EdJ"/>
                         </constraints>
                         <string key="text">r;krjrgj ssejr gsejrg sdijgsdjgsdfjg'dls;fg s'dfg sdfgjs dl;fgjks;dlgk s'd;gk sd;fggj;dlgj;ldskfjgl;ksdjg;sdgl;jsdfgjsd;gjs;dkljfg s dfgjsdlgjsdlfg</string>
-                        <fontDescription key="fontDescription" name="RalewayRoman-Regular" family="Raleway" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-Regular" family="Raleway" pointSize="10"/>
+                        <color key="textColor" red="0.77254901960784317" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-oA-wYB">
-                        <rect key="frame" x="32" y="179.5" width="41.5" height="26"/>
-                        <fontDescription key="fontDescription" name="RalewayRoman-Bold" family="Raleway" pointSize="22"/>
+                        <rect key="frame" x="32" y="189" width="30.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-Bold" family="Raleway" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -57,8 +57,8 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQE-sf-zkz">
-                        <rect key="frame" x="298" y="190" width="33" height="15.5"/>
-                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="13"/>
+                        <rect key="frame" x="297.5" y="191" width="33.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-SemiBold" family="Raleway" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -67,17 +67,17 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="37.5" id="l29-i9-uRu"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-SemiBold" family="Raleway" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg1-Fu-Fx5">
-                        <rect key="frame" x="16" y="575" width="25" height="16"/>
+                        <rect key="frame" x="16" y="575" width="21" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="HaU-qU-KBF"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="13"/>
-                        <color key="textColor" systemColor="systemOrangeColor"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-SemiBold" family="Raleway" pointSize="10"/>
+                        <color key="textColor" red="1" green="0.61176470588235299" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>

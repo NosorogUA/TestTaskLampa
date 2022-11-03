@@ -4,16 +4,22 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Font.ttf">
+            <string>RalewayRoman-Bold</string>
+            <string>RalewayRoman-Regular</string>
+            <string>RalewayRoman-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StripeTableViewCell" rowHeight="252" id="KGk-i7-Jjw" customClass="StripeTableViewCell" customModule="TestTaskLampa" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="357" height="252"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="357" height="252"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -25,28 +31,30 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMF-8U-fxX">
-                        <rect key="frame" x="160" y="16" width="181" height="14"/>
+                        <rect key="frame" x="160" y="16" width="181" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="14" id="aCW-ar-NZj"/>
+                            <constraint firstAttribute="height" constant="20" id="aCW-ar-NZj"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-Bold" family="Raleway" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kim-1w-3qj">
-                        <rect key="frame" x="160" y="42" width="181" height="82"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kim-1w-3qj">
+                        <rect key="frame" x="160" y="48" width="181" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="u5B-d3-2Xk"/>
                         </constraints>
-                        <string key="text">Label ldfkjlsdf lkasdfjkl jaklsdfjlkasj dlasldfjlkajsd flajsldfjasl jdlfkjasdlf alskdfj sdjflkjsdflkajs dlfjlsdkfjlasj dfljasdlf j edfkjskldf asdklfjklajs dfljaklsdjf klajsldfkj lkasjdflkj alksdjflj sldfjlas djflasjdflkj aslkdfjl asjdflj asldkfjlas jdflj asdkfjl askd sldfj lasjdf lk</string>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="RalewayRoman-Regular" family="Raleway" pointSize="10"/>
+                        <color key="textColor" red="0.77254901960784317" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmJ-EZ-V5K">
-                        <rect key="frame" x="160" y="136" width="181" height="12"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <color key="textColor" systemColor="systemOrangeColor"/>
+                        <rect key="frame" x="160" y="81" width="181" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="klh-HM-CaO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="RalewayRoman-SemiBold" family="Raleway" pointSize="10"/>
+                        <color key="textColor" red="1" green="0.61176470588235299" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -55,7 +63,7 @@
                     <constraint firstItem="GMF-8U-fxX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="1na-95-eDd"/>
                     <constraint firstItem="kim-1w-3qj" firstAttribute="leading" secondItem="tBJ-gc-PhG" secondAttribute="trailing" constant="16" id="5hh-I2-6nO"/>
                     <constraint firstAttribute="trailing" secondItem="kim-1w-3qj" secondAttribute="trailing" constant="16" id="E7m-pe-W17"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tBJ-gc-PhG" secondAttribute="bottom" constant="16" id="Erw-jn-o1X"/>
+                    <constraint firstAttribute="bottom" secondItem="tBJ-gc-PhG" secondAttribute="bottom" constant="16" id="Erw-jn-o1X"/>
                     <constraint firstItem="WmJ-EZ-V5K" firstAttribute="top" secondItem="kim-1w-3qj" secondAttribute="bottom" constant="12" id="MUs-NE-oFZ"/>
                     <constraint firstItem="tBJ-gc-PhG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="WyF-Hf-Shm"/>
                     <constraint firstItem="GMF-8U-fxX" firstAttribute="leading" secondItem="tBJ-gc-PhG" secondAttribute="trailing" constant="16" id="XgQ-8p-ZFA"/>
@@ -69,7 +77,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="dareLabel" destination="WmJ-EZ-V5K" id="0Dm-ZJ-aXr"/>
+                <outlet property="dataLabel" destination="WmJ-EZ-V5K" id="0Dm-ZJ-aXr"/>
                 <outlet property="descriptionLabel" destination="kim-1w-3qj" id="4C6-bX-fYr"/>
                 <outlet property="posterImageView" destination="tBJ-gc-PhG" id="wa7-qh-k2i"/>
                 <outlet property="titleLabel" destination="GMF-8U-fxX" id="xUR-wX-cyt"/>
@@ -77,9 +85,4 @@
             <point key="canvasLocation" x="209.42028985507247" y="143.97321428571428"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

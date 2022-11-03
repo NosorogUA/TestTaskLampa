@@ -23,14 +23,14 @@ class DetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        //setupGradient()
+        setupUI()
+        setupGradient()
         reset()
     }
     
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: self.layer)
         gradientLayer.frame = posterImageView.bounds
-        setupGradient()
     }
           
     private func setupGradient() {
@@ -39,9 +39,26 @@ class DetailTableViewCell: UITableViewCell {
         posterImageView.addGradient(with: gradientLayer, gradientFrame: posterImageView.frame, colorSet: colorSet, locations: location)
     }
     
+    private func setupUI() {
+        
+        let titleFont = UIFont(name: UISettings.Font.boldFontName, size: 14)
+        let descriptionLabelFont = UIFont(name: UISettings.Font.semiboldFontName, size: 12)
+        let descriptionFont = UIFont(name: UISettings.Font.regularFontName, size: 10)
+        let dataFont = UIFont(name: UISettings.Font.semiboldFontName, size: 10)
+        
+        titleTextLabel.font = titleFont
+        titleTextLabel.textColor = UISettings.Color.white
+        descriptionTextLabel.font = descriptionFont
+        descriptionTextLabel.textColor = UISettings.Color.darkGrey
+        descriptionTitleTextLabel.font = descriptionLabelFont
+        descriptionTitleTextLabel.textColor = UISettings.Color.white
+        yearTextLabel.font = dataFont
+        yearTextLabel.textColor = UISettings.Color.orange
+        ratingTextLabel.font = descriptionLabelFont
+        ratingTextLabel.textColor = UISettings.Color.white
+    }
     
     func setup(title: String, description: String, year: String, rating: Float, imageUrl: URL?) {
-        
         titleTextLabel.text = title
         descriptionTitleTextLabel.text = "\(Strings.Headers.description):"
         yearTextLabel.text = "\(Strings.Headers.year): \(year)"

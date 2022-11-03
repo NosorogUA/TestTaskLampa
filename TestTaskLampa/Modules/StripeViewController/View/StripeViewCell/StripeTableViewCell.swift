@@ -12,12 +12,14 @@ class StripeTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var posterImageView: UIImageView!
-    @IBOutlet weak var dareLabel: UILabel!
+    @IBOutlet weak var dataLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupUI()
         reset()
     }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         reset()
@@ -28,7 +30,20 @@ class StripeTableViewCell: UITableViewCell {
         posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground, completed: nil)
         titleLabel.text = title
         descriptionLabel.text = description
-        dareLabel.text = date
+        dataLabel.text = date
+    }
+    
+    private func setupUI() {
+        let titleFont = UIFont(name: UISettings.Font.boldFontName, size: 14)
+        let descriptionFont = UIFont(name: UISettings.Font.regularFontName, size: 10)
+        let dataFont = UIFont(name: UISettings.Font.semiboldFontName, size: 10)
+        
+        titleLabel.font = titleFont
+        titleLabel.textColor = UISettings.Color.white
+        descriptionLabel.font = descriptionFont
+        descriptionLabel.textColor = UISettings.Color.darkGrey
+        dataLabel.font = dataFont
+        dataLabel.textColor = UISettings.Color.orange
     }
     
     private func reset() {

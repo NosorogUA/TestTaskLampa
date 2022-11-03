@@ -9,7 +9,7 @@ import Foundation
 
 struct Strings {
     
-    struct Headers{
+    struct Headers {
         static let year = "Year"
         static let description = "Description"
         static let rating = "Rating"

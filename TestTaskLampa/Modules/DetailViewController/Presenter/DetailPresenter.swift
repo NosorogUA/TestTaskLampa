@@ -29,6 +29,6 @@ class DetailPresenter: DetailOutput {
         print("Try to setup cell in presenter")
         guard let posterPath = movie.posterPath else { return }
         let url = "https://image.tmdb.org/t/p/w500\(posterPath)"
-        cell.setup(title: movie.title, description: movie.overview, year: movie.releaseDate, rating: movie.popularity, imageUrl: URL(string: url))
+        cell.setup(title: movie.title, description: movie.overview, year: movie.releaseDate, rating: Int(movie.popularity), imageUrl: URL(string: url))
     }
 }

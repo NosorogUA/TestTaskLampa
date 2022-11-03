@@ -10,7 +10,7 @@ import Foundation
 struct Strings {
     
     struct Headers {
-        static let year = "Year"
+        static let release = "Release"
         static let description = "Description"
         static let rating = "Rating"
         static let popular = "Home"

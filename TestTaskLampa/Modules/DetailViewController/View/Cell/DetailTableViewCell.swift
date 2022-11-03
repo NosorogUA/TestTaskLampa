@@ -58,10 +58,10 @@ class DetailTableViewCell: UITableViewCell {
         ratingTextLabel.textColor = UISettings.Color.white
     }
     
-    func setup(title: String, description: String, year: String, rating: Float, imageUrl: URL?) {
+    func setup(title: String, description: String, year: String, rating: Int, imageUrl: URL?) {
         titleTextLabel.text = title
         descriptionTitleTextLabel.text = "\(Strings.Headers.description):"
-        yearTextLabel.text = "\(Strings.Headers.year): \(year)"
+        yearTextLabel.text = "\(Strings.Headers.release): \(year)"
         ratingTextLabel.text = "\(rating.formatted())"
         descriptionTextLabel.text = description
         posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground)

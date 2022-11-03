@@ -12,8 +12,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemBackground
-        
+        view.backgroundColor = UISettings.Color.background
         tabBar.barTintColor = .black
         tabBar.backgroundColor = .black
         tabBar.tintColor = .orange
@@ -35,13 +34,12 @@ class TabBarController: UITabBarController {
         let navigationController = UINavigationController(rootViewController: rootViewController)
         navigationController.tabBarItem.image = image
         
-        //navigationController.navigationBar.prefersLargeTitles = true
         navigationController.navigationBar.barStyle = .black
-        navigationController.navigationBar.barTintColor = UIColor(red: 0.043, green: 0.016, blue: 0.188, alpha: 1)
-        //navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-        //navigationItem.largeTitleDisplayMode = .always
-        navigationItem.backButtonDisplayMode = .minimal
-        //rootViewController.title = title
+        navigationController.navigationBar.barTintColor = UISettings.Color.background
+        navigationController.navigationBar.topItem?.backButtonDisplayMode = .minimal
+        navigationController.navigationBar.tintColor = .white
+        
+        rootViewController.title = title
         return navigationController
     }
 }

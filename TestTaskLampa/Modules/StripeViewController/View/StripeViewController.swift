@@ -31,14 +31,12 @@ class StripeViewController: UIViewController {
         presenter.loadData()
     }
     
-    private func setupNavigationBar() {
-        
+    private func setupNavigationBar() {        
         let logo = UIImage(named: "logo")?.withRenderingMode(.alwaysOriginal)
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
         self.navigationItem.titleView?.contentMode = .scaleAspectFit
-        
-        print("Hi, I'm view and try to start my work")
+        //print("Hi, I'm view and try to start my work")
     }
     
     private func setupTableview() {

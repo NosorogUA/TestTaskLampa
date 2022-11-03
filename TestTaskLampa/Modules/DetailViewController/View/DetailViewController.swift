@@ -10,13 +10,21 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var presenter: DetailOutput!
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var tableView: UITableView!    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarController?.tabBar.isHidden = true
+        setupNavigationBar()
         setupTableview()
+    }
+    
+    private func setupNavigationBar() {
+        let logo = UIImage(named: "logo")?.withRenderingMode(.alwaysOriginal)
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
+        self.navigationItem.titleView?.contentMode = .scaleAspectFit
+        //print("Hi, I'm view and try to start my work")
     }
         
     private func setupTableview() {

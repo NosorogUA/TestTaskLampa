@@ -52,7 +52,7 @@ class StripePresenter: StripeViewOutput {
         if let posterPath = movie.posterPath {
             url = dataManager.getImageURL(posterPath)
         }
-        let data = "Release: \(movie.releaseDate)"
+        let data = "\(Strings.Headers.release): \(movie.releaseDate)"
         
         cell.setup(title: movie.title, description: movie.overview, date: data, imageUrl: URL(string: url))
     }

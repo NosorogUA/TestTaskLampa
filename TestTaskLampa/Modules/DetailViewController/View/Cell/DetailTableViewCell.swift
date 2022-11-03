@@ -44,10 +44,10 @@ class DetailTableViewCell: UITableViewCell {
         titleTextLabel.text = title
         descriptionTitleTextLabel.text = "\(Strings.Headers.description):"
         yearTextLabel.text = "\(Strings.Headers.year): \(year)"
-        ratingTextLabel.text = "\(Strings.Headers.rating): \(rating)"
+        ratingTextLabel.text = "\(rating.formatted())"
         descriptionTextLabel.text = description
         posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground)
-        starImageView.image = UIImage(systemName: "star.field")
+        starImageView.image = UIImage(systemName: "star.fill")
     }
     
     private func reset() {

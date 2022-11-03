@@ -14,5 +14,5 @@ protocol StripeViewOutput {
     func configurateCell(_ cell: StripeTableViewCell, indexPath: IndexPath)
     func getRowsCount(_ section: Int) -> Int
     func getSectionsCount() -> Int
-    func getDetailVC(_ indexPath: IndexPath) -> DetailTableViewController?
+    func getDetailVC(_ indexPath: IndexPath) -> DetailViewController?
 }

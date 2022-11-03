@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF345B102913D9C80054B665 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345B0F2913D9C80054B665 /* TabBarController.swift */; };
+		AF345B132913E33F0054B665 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345B112913E33F0054B665 /* DetailViewController.swift */; };
+		AF345B142913E33F0054B665 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF345B122913E33F0054B665 /* DetailViewController.xib */; };
 		AF47FC7C2912CB990094A260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC7B2912CB990094A260 /* AppDelegate.swift */; };
 		AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC7D2912CB990094A260 /* SceneDelegate.swift */; };
 		AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC842912CB9B0094A260 /* Assets.xcassets */; };
@@ -24,10 +27,8 @@
 		AF47FCB22912D1B30094A260 /* StripeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */; };
 		AF47FCB32912D1B30094A260 /* StripeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */; };
 		AF47FCB72912D2350094A260 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB62912D2350094A260 /* DetailPresenter.swift */; };
-		AF47FCBF2912D2450094A260 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB82912D2450094A260 /* DetailTableViewController.swift */; };
 		AF47FCC02912D2450094A260 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */; };
 		AF47FCC12912D2450094A260 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */; };
-		AF47FCC22912D2450094A260 /* DetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCBC2912D2450094A260 /* DetailTableViewController.xib */; };
 		AF47FCC32912D2450094A260 /* DetailOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCBD2912D2450094A260 /* DetailOutput.swift */; };
 		AF47FCC42912D2450094A260 /* DetailInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCBE2912D2450094A260 /* DetailInput.swift */; };
 		AF47FCC62912D24E0094A260 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCC52912D24E0094A260 /* DetailAssembly.swift */; };
@@ -37,6 +38,9 @@
 /* Begin PBXFileReference section */
 		34C67F8615D5F177E0829AF9 /* Pods-TestTaskLampa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLampa.release.xcconfig"; path = "Target Support Files/Pods-TestTaskLampa/Pods-TestTaskLampa.release.xcconfig"; sourceTree = "<group>"; };
 		3DFB7D2ABC7B0F3A8B9E7B44 /* Pods_TestTaskLampa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskLampa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF345B0F2913D9C80054B665 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AF345B112913E33F0054B665 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AF345B122913E33F0054B665 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		AF47FC782912CB990094A260 /* TestTaskLampa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskLampa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47FC7B2912CB990094A260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF47FC7D2912CB990094A260 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,10 +60,8 @@
 		AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeTableViewCell.swift; sourceTree = "<group>"; };
 		AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StripeTableViewCell.xib; sourceTree = "<group>"; };
 		AF47FCB62912D2350094A260 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
-		AF47FCB82912D2450094A260 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
-		AF47FCBC2912D2450094A260 /* DetailTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewController.xib; sourceTree = "<group>"; };
 		AF47FCBD2912D2450094A260 /* DetailOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOutput.swift; sourceTree = "<group>"; };
 		AF47FCBE2912D2450094A260 /* DetailInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInput.swift; sourceTree = "<group>"; };
 		AF47FCC52912D24E0094A260 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
@@ -84,7 +86,6 @@
 				FF3517C459B8A7263160AFFC /* Pods-TestTaskLampa.debug.xcconfig */,
 				34C67F8615D5F177E0829AF9 /* Pods-TestTaskLampa.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -109,6 +110,7 @@
 		AF47FC7A2912CB990094A260 /* TestTaskLampa */ = {
 			isa = PBXGroup;
 			children = (
+				AF47FC892912CB9B0094A260 /* Info.plist */,
 				AF47FCAC2912D0D20094A260 /* Strings */,
 				AF47FCA92912D0960094A260 /* Enums */,
 				AF47FCA42912D0360094A260 /* Network */,
@@ -134,7 +136,6 @@
 			children = (
 				AF47FC842912CB9B0094A260 /* Assets.xcassets */,
 				AF47FC862912CB9B0094A260 /* LaunchScreen.storyboard */,
-				AF47FC892912CB9B0094A260 /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -180,6 +181,7 @@
 		AF47FC952912CD0C0094A260 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				AF345B0F2913D9C80054B665 /* TabBarController.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -243,8 +245,8 @@
 				AF47FCB92912D2450094A260 /* Cell */,
 				AF47FCBE2912D2450094A260 /* DetailInput.swift */,
 				AF47FCBD2912D2450094A260 /* DetailOutput.swift */,
-				AF47FCB82912D2450094A260 /* DetailTableViewController.swift */,
-				AF47FCBC2912D2450094A260 /* DetailTableViewController.xib */,
+				AF345B112913E33F0054B665 /* DetailViewController.swift */,
+				AF345B122913E33F0054B665 /* DetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,8 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF47FCC22912D2450094A260 /* DetailTableViewController.xib in Resources */,
 				AF47FC9D2912CD990094A260 /* StripeViewController.xib in Resources */,
+				AF345B142913E33F0054B665 /* DetailViewController.xib in Resources */,
 				AF47FCC12912D2450094A260 /* DetailTableViewCell.xib in Resources */,
 				AF47FC882912CB9B0094A260 /* LaunchScreen.storyboard in Resources */,
 				AF47FCB32912D1B30094A260 /* StripeTableViewCell.xib in Resources */,
@@ -392,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF47FCBF2912D2450094A260 /* DetailTableViewController.swift in Sources */,
 				AF47FCC32912D2450094A260 /* DetailOutput.swift in Sources */,
 				AF47FC7C2912CB990094A260 /* AppDelegate.swift in Sources */,
 				AF47FCAE2912D0D20094A260 /* Strings.swift in Sources */,
@@ -402,6 +403,8 @@
 				AF47FCA32912CE200094A260 /* StripePresenter.swift in Sources */,
 				AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */,
 				AF47FCB22912D1B30094A260 /* StripeTableViewCell.swift in Sources */,
+				AF345B102913D9C80054B665 /* TabBarController.swift in Sources */,
+				AF345B132913E33F0054B665 /* DetailViewController.swift in Sources */,
 				AF47FCA62912D04B0094A260 /* NetworkManager.swift in Sources */,
 				AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */,
 				AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */,
@@ -567,7 +570,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -595,7 +598,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

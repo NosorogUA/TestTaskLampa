@@ -27,12 +27,12 @@ class StripePresenter: StripeViewOutput {
     func getTitle() -> String {
         let title: String
         switch category {
-        case .popular:
+        case .home:
             title = Strings.Headers.popular
         case .nowPlaying:
             title = Strings.Headers.nowPlaying
         case .topRated:
-            title = Strings.Headers.topRated
+            title = Strings.Headers.favorite
         }
         return title
     }
@@ -57,7 +57,7 @@ class StripePresenter: StripeViewOutput {
         cell.setup(title: movie.title, description: movie.overview, date: data, imageUrl: URL(string: url))
     }
     
-    func getDetailVC(_ indexPath: IndexPath) -> DetailTableViewController? {
+    func getDetailVC(_ indexPath: IndexPath) -> DetailViewController? {
         
         let movie = data[indexPath.row]
         let detailAssembly = DetailAssembly()

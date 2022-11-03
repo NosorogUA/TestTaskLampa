@@ -8,13 +8,13 @@
 import Foundation
 
 enum MovieCategory {
-    case popular
+    case home
     case nowPlaying
     case topRated
     
     var urlPath: String {
         switch self {
-        case .popular:
+        case .home:
             return "popular"
         case .nowPlaying:
             return "now_playing" //Misprint for test. change to -> now_playing > for correct result

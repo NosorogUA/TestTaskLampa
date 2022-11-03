@@ -12,7 +12,7 @@ class DetailPresenter: DetailOutput {
     var view: DetailInput
     private let movie: Movie
        
-    init(view: DetailTableViewController, movieInfo: Movie) {
+    init(view: DetailInput, movieInfo: Movie) {
         self.view = view
         self.movie = movieInfo
     }

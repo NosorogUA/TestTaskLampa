@@ -9,8 +9,8 @@ import Foundation
 
 struct DetailAssembly {
     
-    func make(movieInfo: Movie) -> DetailTableViewController {
-        let viewController = DetailTableViewController()
+    func make(movieInfo: Movie) -> DetailViewController {
+        let viewController = DetailViewController()
         let presenter = DetailPresenter(view: viewController, movieInfo: movieInfo)
         viewController.presenter = presenter
         return viewController

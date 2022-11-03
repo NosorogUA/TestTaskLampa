@@ -13,6 +13,7 @@ class StripeViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     var presenter: StripeViewOutput!
+    let cellID = "StripeTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +32,6 @@ class StripeViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .always
         
         let logo = UIImage(named: "logo")?.withRenderingMode(.alwaysOriginal)
         let imageView = UIImageView(image: logo)
@@ -43,10 +42,13 @@ class StripeViewController: UIViewController {
     }
     
     private func setupTableview() {
+        view.backgroundColor = UIColor(red: 0.043, green: 0.016, blue: 0.188, alpha: 1)
+        tableView.backgroundColor = .clear
         tableView.delegate = self
         tableView.dataSource = self
-        let mainCell = UINib(nibName: "MainTableViewCell", bundle: nil)
-        tableView.register(mainCell, forCellReuseIdentifier: "MainTableViewCell")
+        tableView.separatorStyle = .none
+        let mainCell = UINib(nibName: cellID, bundle: nil)
+        tableView.register(mainCell, forCellReuseIdentifier: cellID)
     }
 
 }
@@ -57,7 +59,7 @@ extension StripeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! StripeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! StripeTableViewCell
         //print("Send cell: \(indexPath) to presenter")
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         presenter.configurateCell(cell, indexPath: indexPath)

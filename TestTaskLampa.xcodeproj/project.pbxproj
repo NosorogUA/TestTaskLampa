@@ -10,6 +10,7 @@
 		AF345B102913D9C80054B665 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345B0F2913D9C80054B665 /* TabBarController.swift */; };
 		AF345B132913E33F0054B665 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345B112913E33F0054B665 /* DetailViewController.swift */; };
 		AF345B142913E33F0054B665 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF345B122913E33F0054B665 /* DetailViewController.xib */; };
+		AF345B172913EF880054B665 /* extentions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF345B162913EF880054B665 /* extentions+UIView.swift */; };
 		AF47FC7C2912CB990094A260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC7B2912CB990094A260 /* AppDelegate.swift */; };
 		AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC7D2912CB990094A260 /* SceneDelegate.swift */; };
 		AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC842912CB9B0094A260 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		AF345B0F2913D9C80054B665 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AF345B112913E33F0054B665 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AF345B122913E33F0054B665 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		AF345B162913EF880054B665 /* extentions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extentions+UIView.swift"; sourceTree = "<group>"; };
 		AF47FC782912CB990094A260 /* TestTaskLampa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskLampa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47FC7B2912CB990094A260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF47FC7D2912CB990094A260 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF345B152913EF610054B665 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				AF345B162913EF880054B665 /* extentions+UIView.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		AF47FC6F2912CB990094A260 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		AF47FC7A2912CB990094A260 /* TestTaskLampa */ = {
 			isa = PBXGroup;
 			children = (
+				AF345B152913EF610054B665 /* Extentions */,
 				AF47FC892912CB9B0094A260 /* Info.plist */,
 				AF47FCAC2912D0D20094A260 /* Strings */,
 				AF47FCA92912D0960094A260 /* Enums */,
@@ -405,6 +416,7 @@
 				AF47FCB22912D1B30094A260 /* StripeTableViewCell.swift in Sources */,
 				AF345B102913D9C80054B665 /* TabBarController.swift in Sources */,
 				AF345B132913E33F0054B665 /* DetailViewController.swift in Sources */,
+				AF345B172913EF880054B665 /* extentions+UIView.swift in Sources */,
 				AF47FCA62912D04B0094A260 /* NetworkManager.swift in Sources */,
 				AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */,
 				AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */,

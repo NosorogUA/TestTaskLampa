@@ -23,20 +23,21 @@ class DetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        setupGradient()
+        //setupGradient()
         reset()
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override func layoutSublayers(of layer: CALayer) {
+        super.layoutSublayers(of: self.layer)
         gradientLayer.frame = posterImageView.bounds
+        setupGradient()
     }
-    
-//    private func setupGradient() {
-//        let colorSet = [ UIColor.red, UIColor.black ]
-//        let location = [0.0, 0.3]
-//        posterImageView.addGradient(with: gradientLayer, colorSet: colorSet, locations: location)
-//    }
+          
+    private func setupGradient() {
+        let colorSet = [ UIColor.clear, UIColor.black ]
+        let location = [0.0, 0.6]
+        posterImageView.addGradient(with: gradientLayer, gradientFrame: posterImageView.frame, colorSet: colorSet, locations: location)
+    }
     
     
     func setup(title: String, description: String, year: String, rating: Float, imageUrl: URL?) {

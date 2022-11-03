@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Raleway-VariableFont_wght.ttf">
+        <array key="Raleway-Font_wght.ttf">
             <string>Raleway-Thin</string>
             <string>RalewayRoman-Bold</string>
             <string>RalewayRoman-Regular</string>
@@ -25,15 +25,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NAN-Ux-7ha">
-                        <rect key="frame" x="16" y="10" width="346" height="218.5"/>
+                        <rect key="frame" x="16" y="10" width="346" height="207.5"/>
                         <color key="backgroundColor" red="0.2476759405" green="0.65374514260000005" blue="0.63034510610000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.71764705880000002" green="0.65374514260000005" blue="0.63034510610000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="NAN-Ux-7ha" secondAttribute="height" multiplier="106:67" id="PPu-uG-ChN"/>
+                            <constraint firstAttribute="width" secondItem="NAN-Ux-7ha" secondAttribute="height" multiplier="10:6" id="PPu-uG-ChN"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HF-dS-GSs">
-                        <rect key="frame" x="16" y="296" width="346" height="263"/>
+                        <rect key="frame" x="16" y="285" width="346" height="274"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="8cs-3d-EdJ"/>
                         </constraints>
@@ -43,13 +43,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-oA-wYB">
-                        <rect key="frame" x="32" y="190.5" width="41.5" height="26"/>
+                        <rect key="frame" x="32" y="179.5" width="41.5" height="26"/>
                         <fontDescription key="fontDescription" name="RalewayRoman-Bold" family="Raleway" pointSize="22"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X1s-cs-O7D">
-                        <rect key="frame" x="332" y="202" width="14" height="14"/>
+                        <rect key="frame" x="336" y="191" width="14" height="14"/>
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="VnU-wd-Evq"/>
@@ -57,13 +57,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQE-sf-zkz">
-                        <rect key="frame" x="294" y="201" width="33" height="15.5"/>
+                        <rect key="frame" x="298" y="190" width="33" height="15.5"/>
                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2y-Xg-Y5n">
-                        <rect key="frame" x="16" y="250.5" width="346" height="37.5"/>
+                        <rect key="frame" x="16" y="239.5" width="346" height="37.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="37.5" id="l29-i9-uRu"/>
                         </constraints>
@@ -83,17 +83,18 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="1HF-dS-GSs" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="16" id="0hl-iX-L0R"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NAN-Ux-7ha" secondAttribute="trailing" constant="16" id="9tG-dH-9Pu"/>
                     <constraint firstItem="Hg1-Fu-Fx5" firstAttribute="top" secondItem="1HF-dS-GSs" secondAttribute="bottom" constant="16" id="AbJ-Ou-kkp"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="X1s-cs-O7D" secondAttribute="trailing" constant="12" id="CTj-c1-9Uq"/>
-                    <constraint firstItem="95M-oA-wYB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="CuV-wZ-gi1"/>
-                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="16" id="H8g-pe-u9a"/>
+                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="trailing" secondItem="X1s-cs-O7D" secondAttribute="trailing" constant="12" id="CTj-c1-9Uq"/>
+                    <constraint firstItem="95M-oA-wYB" firstAttribute="leading" secondItem="NAN-Ux-7ha" secondAttribute="leading" constant="16" id="CuV-wZ-gi1"/>
+                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="J7z-5g-6Xg"/>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="bottom" secondItem="95M-oA-wYB" secondAttribute="bottom" constant="12" id="Lms-ti-9sf"/>
                     <constraint firstAttribute="trailing" secondItem="R2y-Xg-Y5n" secondAttribute="trailing" constant="16" id="M7F-FB-NV5"/>
                     <constraint firstItem="R2y-Xg-Y5n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WDD-p3-Abv"/>
                     <constraint firstItem="X1s-cs-O7D" firstAttribute="leading" secondItem="JQE-sf-zkz" secondAttribute="trailing" constant="5" id="Zf8-gO-K7E"/>
+                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bbV-sZ-rc4"/>
                     <constraint firstAttribute="right" secondItem="1HF-dS-GSs" secondAttribute="right" constant="16" id="eao-hP-k9Y"/>
                     <constraint firstItem="JQE-sf-zkz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="95M-oA-wYB" secondAttribute="trailing" constant="20" id="egh-O5-NJB"/>
-                    <constraint firstAttribute="right" secondItem="NAN-Ux-7ha" secondAttribute="right" constant="16" id="fyv-WK-hLk"/>
                     <constraint firstItem="R2y-Xg-Y5n" firstAttribute="top" secondItem="NAN-Ux-7ha" secondAttribute="bottomMargin" constant="30" id="gQX-Pn-oQL"/>
                     <constraint firstAttribute="bottom" secondItem="Hg1-Fu-Fx5" secondAttribute="bottom" constant="20" id="hgJ-pY-kha"/>
                     <constraint firstItem="X1s-cs-O7D" firstAttribute="bottom" secondItem="NAN-Ux-7ha" secondAttribute="bottom" constant="-12" id="lba-jM-Agy"/>

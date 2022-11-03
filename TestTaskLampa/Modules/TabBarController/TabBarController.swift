@@ -35,13 +35,13 @@ class TabBarController: UITabBarController {
         let navigationController = UINavigationController(rootViewController: rootViewController)
         navigationController.tabBarItem.image = image
         
-        navigationController.navigationBar.prefersLargeTitles = true
+        //navigationController.navigationBar.prefersLargeTitles = true
         navigationController.navigationBar.barStyle = .black
         navigationController.navigationBar.barTintColor = UIColor(red: 0.043, green: 0.016, blue: 0.188, alpha: 1)
-        navigationController.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationItem.largeTitleDisplayMode = .always
+        //navigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        //navigationItem.largeTitleDisplayMode = .always
         navigationItem.backButtonDisplayMode = .minimal
-        rootViewController.title = title
+        //rootViewController.title = title
         return navigationController
     }
 }

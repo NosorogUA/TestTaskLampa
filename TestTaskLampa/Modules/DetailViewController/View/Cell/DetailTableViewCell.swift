@@ -14,7 +14,7 @@ class DetailTableViewCell: UITableViewCell {
     @IBOutlet private weak var ratingTextLabel: UILabel!
      
     @IBOutlet private weak var posterImageView: UIImageView!
-    @IBOutlet weak var starImageView: UIImageView!
+    @IBOutlet private weak var starImageView: UIImageView!
     
     private let gradientLayer = CAGradientLayer()
     
@@ -47,9 +47,9 @@ class DetailTableViewCell: UITableViewCell {
         ratingTextLabel.textColor = UISettings.Color.white
     }
     
-    func setup(title: String,  rating: Int, imageUrl: URL?) {
+    func setup(title: String,  rating: Float, imageUrl: URL?) {
         titleTextLabel.text = title
-        ratingTextLabel.text = "\(rating.formatted())"
+        ratingTextLabel.text = String(format: "%.1f", rating)
         posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground)
         starImageView.image = UIImage(systemName: "star.fill")
     }

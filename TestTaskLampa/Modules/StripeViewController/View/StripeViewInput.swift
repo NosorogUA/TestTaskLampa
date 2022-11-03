@@ -7,8 +7,7 @@
 
 import Foundation
 
-protocol StripeViewInput {
-    
+protocol StripeViewInput {    
     func reloadTableView()
     func startIndicator()
     func stopIndicator()

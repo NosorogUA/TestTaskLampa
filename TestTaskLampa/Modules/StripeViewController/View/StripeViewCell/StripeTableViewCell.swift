@@ -12,7 +12,7 @@ class StripeTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var posterImageView: UIImageView!
-    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet private weak var dataLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

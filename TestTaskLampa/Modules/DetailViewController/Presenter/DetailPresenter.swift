@@ -28,7 +28,7 @@ class DetailPresenter: DetailOutput {
     func configureDetailCell(_ cell: DetailTableViewCell) {
         guard let posterPath = movie.posterPath else { return }
         let url = "https://image.tmdb.org/t/p/w500\(posterPath)"
-        cell.setup(title: movie.title, rating: Int(movie.popularity), imageUrl: URL(string: url))
+        cell.setup(title: movie.title, rating: movie.voteAverage, imageUrl: URL(string: url))
     }
     
     func configureDetailInfoCell(_ cell: DetailInfoTableViewCell) {

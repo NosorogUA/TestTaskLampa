@@ -9,7 +9,7 @@ import Foundation
 
 class StripePresenter: StripeViewOutput {
     
-    var isPaginating = false
+    private var isPaginating = false
     
     private var data: [Movie] = []
     private var view: StripeViewInput

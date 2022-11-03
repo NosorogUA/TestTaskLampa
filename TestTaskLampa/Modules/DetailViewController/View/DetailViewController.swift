@@ -11,8 +11,8 @@ class DetailViewController: UIViewController {
     
     var presenter: DetailOutput!
     @IBOutlet weak var tableView: UITableView!
-    let detailCellID = "DetailTableViewCell"
-    let detailInfoCellId = "DetailInfoTableViewCell"
+    private let detailCellID = "DetailTableViewCell"
+    private let detailInfoCellId = "DetailInfoTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()

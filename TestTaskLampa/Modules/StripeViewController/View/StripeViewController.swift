@@ -9,19 +9,18 @@ import UIKit
 
 class StripeViewController: UIViewController {
 
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
     
     var presenter: StripeViewOutput!
-    let cellID = "StripeTableViewCell"
+    private let cellID = "StripeTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.hidesWhenStopped = true
         setupNavigationBar()
         setupTableview()
-        loadData()
-        print(DetailRowType.poster.rawValue)
+        loadData()        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -12,6 +12,7 @@ class StripeTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var posterImageView: UIImageView!
+    @IBOutlet weak var dareLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,11 +23,12 @@ class StripeTableViewCell: UITableViewCell {
         reset()
     }
     
-    func setup(title: String, description: String, imageUrl: URL?) {
+    func setup(title: String, description: String, date: String, imageUrl: URL?) {
         print("try to show cell: \(title)")
-       // posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground, completed: nil)
+        posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground, completed: nil)
         titleLabel.text = title
         descriptionLabel.text = description
+        dareLabel.text = date
     }
     
     private func reset() {

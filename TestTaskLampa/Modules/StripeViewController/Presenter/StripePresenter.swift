@@ -52,8 +52,9 @@ class StripePresenter: StripeViewOutput {
         if let posterPath = movie.posterPath {
             url = dataManager.getImageURL(posterPath)
         }
+        let data = "Release: \(movie.releaseDate)"
         
-        cell.setup(title: movie.title, description: movie.overview, imageUrl: URL(string: url))
+        cell.setup(title: movie.title, description: movie.overview, date: data, imageUrl: URL(string: url))
     }
     
     func getDetailVC(_ indexPath: IndexPath) -> DetailTableViewController? {

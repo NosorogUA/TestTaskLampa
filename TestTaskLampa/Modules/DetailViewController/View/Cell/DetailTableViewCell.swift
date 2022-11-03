@@ -17,6 +17,7 @@ class DetailTableViewCell: UITableViewCell {
     @IBOutlet private weak var descriptionTitleTextLabel: UILabel!
      
     @IBOutlet private weak var posterImageView: UIImageView!
+    @IBOutlet weak var starImageView: UIImageView!
     
     private let gradientLayer = CAGradientLayer()
     
@@ -45,7 +46,8 @@ class DetailTableViewCell: UITableViewCell {
         yearTextLabel.text = "\(Strings.Headers.year): \(year)"
         ratingTextLabel.text = "\(Strings.Headers.rating): \(rating)"
         descriptionTextLabel.text = description
-        posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground) 
+        posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground)
+        starImageView.image = UIImage(systemName: "star.field")
     }
     
     private func reset() {

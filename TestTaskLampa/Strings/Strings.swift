@@ -11,7 +11,7 @@ struct Strings {
     
     struct Headers{
         static let year = "Year"
-        static let language = "Language"
+        static let description = "Description"
         static let rating = "Rating"
         static let popular = "Popular"
         static let nowPlaying = "Now Playing"

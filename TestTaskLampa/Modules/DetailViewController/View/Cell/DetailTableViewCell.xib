@@ -103,6 +103,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="descriptionTextLabel" destination="1HF-dS-GSs" id="T0Z-9j-BMZ"/>
+                <outlet property="descriptionTitleTextLabel" destination="R2y-Xg-Y5n" id="Foy-R6-ClT"/>
                 <outlet property="posterImageView" destination="NAN-Ux-7ha" id="Eo2-7i-Ytd"/>
                 <outlet property="ratingTextLabel" destination="JQE-sf-zkz" id="q8x-l8-m8G"/>
                 <outlet property="titleTextLabel" destination="95M-oA-wYB" id="wkL-gX-fds"/>

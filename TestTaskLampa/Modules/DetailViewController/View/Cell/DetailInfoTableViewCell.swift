@@ -32,8 +32,7 @@ class DetailInfoTableViewCell: UITableViewCell {
         yearTextLabel.textColor = UISettings.Color.orange
     }
     
-    func setup(description: String, year: String) {
-        
+    func setup(description: String, year: String) {        
         descriptionTitleTextLabel.text = "\(Strings.Headers.description):"
         yearTextLabel.text = "\(Strings.Headers.release): \(year)"
         descriptionTextLabel.text = description

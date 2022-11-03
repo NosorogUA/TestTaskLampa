@@ -8,9 +8,9 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    
+        
+    @IBOutlet private weak var tableView: UITableView!
     var presenter: DetailOutput!
-    @IBOutlet weak var tableView: UITableView!
     private let detailCellID = "DetailTableViewCell"
     private let detailInfoCellId = "DetailInfoTableViewCell"
     
@@ -46,8 +46,9 @@ class DetailViewController: UIViewController {
     }
 }
 
+// MARK: - Table view data source
 extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
-    // MARK: - Table view data source
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return presenter.getSectionsCount()
     }
@@ -74,6 +75,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
+
 extension DetailViewController: DetailInput {
     
 }

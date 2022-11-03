@@ -12,7 +12,6 @@ class DetailTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var titleTextLabel: UILabel!
     @IBOutlet private weak var ratingTextLabel: UILabel!
-     
     @IBOutlet private weak var posterImageView: UIImageView!
     @IBOutlet private weak var starImageView: UIImageView!
     
@@ -37,7 +36,6 @@ class DetailTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        
         let titleFont = UIFont(name: UISettings.Font.boldFontName, size: 14)
         let descriptionLabelFont = UIFont(name: UISettings.Font.semiboldFontName, size: 12)
         

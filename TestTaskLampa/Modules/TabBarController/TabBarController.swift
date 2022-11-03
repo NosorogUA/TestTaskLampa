@@ -37,8 +37,9 @@ class TabBarController: UITabBarController {
         navigationController.navigationBar.barStyle = .black
         navigationController.navigationBar.barTintColor = UISettings.Color.background
         navigationController.navigationBar.topItem?.backButtonDisplayMode = .minimal
-        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.tintColor = UISettings.Color.white
         navigationController.navigationBar.isTranslucent = false
+        
         rootViewController.title = title
         return navigationController
     }

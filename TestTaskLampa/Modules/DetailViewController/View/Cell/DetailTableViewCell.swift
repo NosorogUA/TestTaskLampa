@@ -45,7 +45,6 @@ class DetailTableViewCell: UITableViewCell {
         titleTextLabel.textColor = UISettings.Color.white
         ratingTextLabel.font = descriptionLabelFont
         ratingTextLabel.textColor = UISettings.Color.white
-        playButton.imageView?.contentMode = .scaleAspectFit
     }
     
     func setup(title: String,  rating: Float, imageUrl: URL?) {

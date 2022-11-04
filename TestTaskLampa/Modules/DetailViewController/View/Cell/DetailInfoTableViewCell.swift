@@ -36,7 +36,6 @@ class DetailInfoTableViewCell: UITableViewCell {
         descriptionTitleTextLabel.text = "\(Strings.Headers.description):"
         yearTextLabel.text = "\(Strings.Headers.release): \(year)"
         descriptionTextLabel.text = description
-        
     }
     
     private func reset() {
@@ -44,5 +43,4 @@ class DetailInfoTableViewCell: UITableViewCell {
         yearTextLabel.text = nil
         descriptionTextLabel.text = nil
     }
-    
 }

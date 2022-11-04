@@ -45,7 +45,7 @@ class StripePresenter: StripeViewOutput {
         return data.count
     }
     
-    func configurateCell(_ cell: StripeTableViewCell, indexPath: IndexPath) {
+    func configureCell(_ cell: StripeTableViewCell, indexPath: IndexPath) {
         
         let movie = data[indexPath.row]
         var url = ""

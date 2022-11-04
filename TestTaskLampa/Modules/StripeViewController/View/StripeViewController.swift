@@ -36,7 +36,6 @@ class StripeViewController: UIViewController {
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
         self.navigationItem.titleView?.contentMode = .scaleAspectFit
-        //print("Hi, I'm view and try to start my work")
     }
     
     private func setupTableview() {
@@ -58,9 +57,8 @@ extension StripeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! StripeTableViewCell
-        //print("Send cell: \(indexPath) to presenter")
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        presenter.configurateCell(cell, indexPath: indexPath)
+        presenter.configureCell(cell, indexPath: indexPath)
         return cell
     }
     

@@ -9,7 +9,7 @@ import Foundation
 
 class DetailPresenter: DetailOutput {
     
-    var view: DetailInput
+    private unowned let view: DetailInput
     private let movie: Movie
        
     init(view: DetailInput, movieInfo: Movie) {
@@ -22,21 +22,28 @@ class DetailPresenter: DetailOutput {
     }
     
     func getRowsCount(_ section: Int) -> Int {
-        return 2
+        return DetailRowType.allCases.count
     }
     
     func getTitle()-> String {
-        let name = movie.title
-        return name
+        return movie.title
     }
     
     func configureDetailCell(_ cell: DetailTableViewCell) {
-        guard let posterPath = movie.posterPath else { return }
-        let url = "https://image.tmdb.org/t/p/w500\(posterPath)"
+        var url = ""
+        if let posterPath = movie.posterPath {
+            url = "https://image.tmdb.org/t/p/w500\(posterPath)"
+        }
         cell.setup(title: movie.title, rating: movie.voteAverage, imageUrl: URL(string: url))
     }
     
     func configureDetailInfoCell(_ cell: DetailInfoTableViewCell) {
-        cell.setup(description: movie.overview, year: movie.releaseDate)
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "YYYY-MM-DD"
+        let showDate = inputFormatter.date(from: movie.releaseDate)
+        inputFormatter.dateFormat = "DD.MM.YYYY"
+        let date = inputFormatter.string(from: showDate!)
+        print(date)
+        cell.setup(description: movie.overview, year: date)
     }
 }

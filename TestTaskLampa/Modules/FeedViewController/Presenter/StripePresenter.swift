@@ -7,17 +7,17 @@
 
 import Foundation
 
-class StripePresenter: StripeViewOutput {
+class StripePresenter: FeedViewOutput {
     
     var isPaginating = false
     
     private var data: [Movie] = []
-    private var view: StripeViewInput
-    private var dataManager: NetworkManager
-    private var category: MovieCategory
+    private unowned var view: FeedViewInput
+    private let dataManager: NetworkManager
+    private let category: MovieCategory
     private var page: Int
     
-    init(view: StripeViewInput, dataManager: NetworkManager, category: MovieCategory) {
+    init(view: FeedViewInput, dataManager: NetworkManager, category: MovieCategory) {
         self.view = view
         self.dataManager = dataManager
         self.category = category
@@ -28,9 +28,7 @@ class StripePresenter: StripeViewOutput {
         let title: String
         switch category {
         case .home:
-            title = Strings.Headers.popular
-        case .nowPlaying:
-            title = Strings.Headers.nowPlaying
+            title = Strings.Headers.popular        
         case .topRated:
             title = Strings.Headers.favorite
         }
@@ -45,16 +43,23 @@ class StripePresenter: StripeViewOutput {
         return data.count
     }
     
-    func configureCell(_ cell: StripeTableViewCell, indexPath: IndexPath) {
+    func configureCell(_ cell: FeedTableViewCell, indexPath: IndexPath) {
         
         let movie = data[indexPath.row]
+        //convert date format
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "YYYY-MM-DD"
+        let showDate = inputFormatter.date(from: movie.releaseDate)
+        inputFormatter.dateFormat = "DD.MM.YYYY"
+        let date = inputFormatter.string(from: showDate!)
+        
         var url = ""
         if let posterPath = movie.posterPath {
             url = dataManager.getImageURL(posterPath)
         }
-        let data = "\(Strings.Headers.release): \(movie.releaseDate)"
+        let dateString = "\(Strings.Headers.release): \(date)"
         
-        cell.setup(title: movie.title, description: movie.overview, date: data, imageUrl: URL(string: url))
+        cell.setup(title: movie.title, description: movie.overview, date: dateString, imageUrl: URL(string: url))
     }
     
     func getDetailVC(_ indexPath: IndexPath) -> DetailViewController? {
@@ -73,9 +78,8 @@ class StripePresenter: StripeViewOutput {
             guard let self = self else { return }
             switch result {
             case .success(let movieRequest):
-                //print("Movies info: \(movieRequest.results)")
-                self.data.append(contentsOf: movieRequest.results)
                 DispatchQueue.main.async {
+                    self.data.append(contentsOf: movieRequest.results)
                     self.view.reloadTableView()
                     self.view.stopIndicator()
                     self.page += 1

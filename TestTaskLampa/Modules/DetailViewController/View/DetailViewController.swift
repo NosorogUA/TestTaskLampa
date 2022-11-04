@@ -10,14 +10,12 @@ import UIKit
 class DetailViewController: UIViewController {
         
     @IBOutlet private weak var tableView: UITableView!
+    
     var presenter: DetailOutput!
-    private let detailCellID = "DetailTableViewCell"
-    private let detailInfoCellId = "DetailInfoTableViewCell"
-    let name: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarController?.tabBar.isHidden = true
+        //tabBarController?.tabBar.isHidden = true // Hide tab bar if need
         setupNavigationBar()
         setupTableview()
     }
@@ -27,7 +25,6 @@ class DetailViewController: UIViewController {
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
         self.navigationItem.titleView?.contentMode = .scaleAspectFit
-        //print("Hi, I'm view and try to start my work")
     }
     
     private func setupTableview() {
@@ -37,10 +34,10 @@ class DetailViewController: UIViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         
-        let detailCell = UINib(nibName: detailCellID, bundle: nil)
-        let detailInfoCell = UINib(nibName: detailInfoCellId, bundle: nil)
-        tableView.register(detailCell, forCellReuseIdentifier: detailCellID)
-        tableView.register(detailInfoCell, forCellReuseIdentifier: detailInfoCellId)
+        let detailCell = UINib(nibName: DetailTableViewCell.identifier, bundle: nil)
+        let detailInfoCell = UINib(nibName: DetailInfoTableViewCell.identifier, bundle: nil)
+        tableView.register(detailCell, forCellReuseIdentifier: DetailTableViewCell.identifier)
+        tableView.register(detailInfoCell, forCellReuseIdentifier: DetailInfoTableViewCell.identifier)
         
         tableView.estimatedRowHeight = 600
         tableView.rowHeight = UITableView.automaticDimension
@@ -48,7 +45,7 @@ class DetailViewController: UIViewController {
     
     //MARK: Alert
     func showAlert(message: String) {
-        let alert = UIAlertController(title: "Show movie", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: Strings.Headers.showMovie, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: Strings.Headers.ok, style: .default, handler: nil)
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
@@ -70,7 +67,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch DetailRowType(rawValue: indexPath.row) {
         case .poster:
-            let cell = tableView.dequeueReusableCell(withIdentifier: detailCellID, for: indexPath) as! DetailTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: DetailTableViewCell.identifier, for: indexPath) as! DetailTableViewCell
             presenter.configureDetailCell(cell)
             cell.buttonHandler = { [weak self] in
                 self?.showAlert(message: self?.presenter.getTitle() ?? "no title")
@@ -78,7 +75,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
             return cell
         case .description:
-            let cell = tableView.dequeueReusableCell(withIdentifier: detailInfoCellId, for: indexPath) as! DetailInfoTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: DetailInfoTableViewCell.identifier, for: indexPath) as! DetailInfoTableViewCell
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
             presenter.configureDetailInfoCell(cell)
             return cell

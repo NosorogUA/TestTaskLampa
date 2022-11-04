@@ -1,5 +1,5 @@
 //
-//  StripeViewController.swift
+//  FeedViewController.swift
 //  TestTaskLampa
 //
 //  Created by Ihor Tokalenko on 02.11.2022.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class StripeViewController: UIViewController {
+class FeedViewController: UIViewController {
 
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
     
-    var presenter: StripeViewOutput!
-    private let cellID = "StripeTableViewCell"
+    var presenter: FeedViewOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +23,7 @@ class StripeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tabBarController?.tabBar.isHidden = false
     }
     
@@ -39,24 +39,24 @@ class StripeViewController: UIViewController {
     }
     
     private func setupTableview() {
-        view.backgroundColor = UIColor(red: 0.043, green: 0.016, blue: 0.188, alpha: 1)
+        view.backgroundColor = UISettings.Color.background
         tableView.backgroundColor = .clear
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        let mainCell = UINib(nibName: cellID, bundle: nil)
-        tableView.register(mainCell, forCellReuseIdentifier: cellID)
+        let mainCell = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
+        tableView.register(mainCell, forCellReuseIdentifier: FeedTableViewCell.identifier)
     }
 
 }
-extension StripeViewController: UITableViewDelegate, UITableViewDataSource {
+extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.getRowsCount(section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! StripeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as! FeedTableViewCell
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         presenter.configureCell(cell, indexPath: indexPath)
         return cell
@@ -68,7 +68,7 @@ extension StripeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension StripeViewController: StripeViewInput {
+extension FeedViewController: FeedViewInput {
     
     func reloadTableView() {
         tableView.reloadData()
@@ -93,15 +93,15 @@ extension StripeViewController: StripeViewInput {
     }
 }
 //MARK: Pagination setup
-extension StripeViewController: UIScrollViewDelegate {
+extension FeedViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let position = scrollView.contentOffset.y
-        if position > (tableView.contentSize.height - 100 - scrollView.frame.size.height) {
+        let offsetPagination: CGFloat = 100
+        if position > (tableView.contentSize.height - offsetPagination - scrollView.frame.size.height) {
             //fetch more data
             guard !presenter.isPaginating else { return }
             presenter.loadData()
-            print("========> Load More")
         }
     }
 }

@@ -13,10 +13,10 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         
         view.backgroundColor = UISettings.Color.background
-        tabBar.barTintColor = .black
-        tabBar.backgroundColor = .black
-        tabBar.tintColor = .orange
-        tabBar.unselectedItemTintColor = .white
+        tabBar.barTintColor = UISettings.Color.black
+        tabBar.backgroundColor = UISettings.Color.black
+        tabBar.tintColor = UISettings.Color.orange
+        tabBar.unselectedItemTintColor = UISettings.Color.white
         setupVC()
     }
     
@@ -32,8 +32,7 @@ class TabBarController: UITabBarController {
     
     private func createNavController(for rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
         let navigationController = UINavigationController(rootViewController: rootViewController)
-        navigationController.tabBarItem.image = image
-        
+        navigationController.tabBarItem.image = image        
         navigationController.navigationBar.barStyle = .black
         navigationController.navigationBar.barTintColor = UISettings.Color.background
         navigationController.navigationBar.topItem?.backButtonDisplayMode = .minimal

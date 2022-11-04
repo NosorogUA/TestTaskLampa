@@ -38,8 +38,8 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X1s-cs-O7D">
-                        <rect key="frame" x="389" y="224.5" width="14" height="14"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="X1s-cs-O7D">
+                        <rect key="frame" x="389" y="225" width="14" height="14"/>
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="VnU-wd-Evq"/>
@@ -60,7 +60,7 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
-                            <imageReference key="image" image="play.circle" catalog="system" symbolScale="large" renderingMode="template"/>
+                            <imageReference key="image" image="play" symbolScale="large" renderingMode="template"/>
                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
                             <color key="baseForegroundColor" red="1" green="0.61176470589999998" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </buttonConfiguration>
@@ -70,11 +70,11 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="NAN-Ux-7ha" firstAttribute="bottomMargin" secondItem="X1s-cs-O7D" secondAttribute="bottom" constant="8" id="8OG-kP-G3m"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NAN-Ux-7ha" secondAttribute="bottom" constant="8" id="Fgw-2T-1Qx"/>
                     <constraint firstItem="95M-oA-wYB" firstAttribute="leading" secondItem="NAN-Ux-7ha" secondAttribute="leading" constant="16" id="G3h-w0-5Op"/>
                     <constraint firstAttribute="trailing" secondItem="NAN-Ux-7ha" secondAttribute="trailing" constant="16" id="Ghq-jm-bPv"/>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="GlJ-U2-mSZ"/>
+                    <constraint firstItem="X1s-cs-O7D" firstAttribute="centerY" secondItem="JQE-sf-zkz" secondAttribute="centerY" id="Knj-We-bg7"/>
                     <constraint firstItem="u3f-7a-00D" firstAttribute="centerX" secondItem="NAN-Ux-7ha" secondAttribute="centerX" id="L1l-yZ-5rX"/>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WqE-GA-61M"/>
                     <constraint firstItem="X1s-cs-O7D" firstAttribute="leading" secondItem="JQE-sf-zkz" secondAttribute="trailing" constant="5" id="Zf8-gO-K7E"/>
@@ -98,8 +98,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="play.circle" catalog="system" width="128" height="121"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="play" width="64" height="64"/>
+        <image name="star" width="16" height="14"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

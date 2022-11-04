@@ -20,15 +20,8 @@ class DetailInfoTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        let descriptionLabelFont = UIFont(name: UISettings.Font.semiboldFontName, size: 12)
-        let descriptionFont = UIFont(name: UISettings.Font.regularFontName, size: 10)
-        let dataFont = UIFont(name: UISettings.Font.semiboldFontName, size: 10)
-        
-        descriptionTextLabel.font = descriptionFont
         descriptionTextLabel.textColor = UISettings.Color.darkGrey
-        descriptionTitleTextLabel.font = descriptionLabelFont
         descriptionTitleTextLabel.textColor = UISettings.Color.white
-        yearTextLabel.font = dataFont
         yearTextLabel.textColor = UISettings.Color.orange
     }
     

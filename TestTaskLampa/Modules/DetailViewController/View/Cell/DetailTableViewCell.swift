@@ -38,12 +38,9 @@ class DetailTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        let titleFont = UIFont(name: UISettings.Font.boldFontName, size: 14)
-        let descriptionLabelFont = UIFont(name: UISettings.Font.semiboldFontName, size: 12)
-        //apply fonts
-        titleTextLabel.font = titleFont
+        posterImageView.layer.cornerRadius = UISettings.Constants.cornerRadius
+        posterImageView.clipsToBounds = true
         titleTextLabel.textColor = UISettings.Color.white
-        ratingTextLabel.font = descriptionLabelFont
         ratingTextLabel.textColor = UISettings.Color.white
     }
     
@@ -51,7 +48,7 @@ class DetailTableViewCell: UITableViewCell {
         titleTextLabel.text = title
         ratingTextLabel.text = String(format: "%.1f", rating)
         posterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(systemName: "photo"), options: .continueInBackground)
-        starImageView.image = UIImage(systemName: "star.fill")
+        starImageView.image = UIImage(named: "star")
     }
     
     private func reset() {

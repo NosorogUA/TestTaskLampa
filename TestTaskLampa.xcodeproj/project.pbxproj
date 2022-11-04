@@ -16,17 +16,17 @@
 		AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC842912CB9B0094A260 /* Assets.xcassets */; };
 		AF47FC882912CB9B0094A260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC862912CB9B0094A260 /* LaunchScreen.storyboard */; };
 		AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC982912CD690094A260 /* StripeAssembly.swift */; };
-		AF47FC9C2912CD990094A260 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9A2912CD990094A260 /* StripeViewController.swift */; };
-		AF47FC9D2912CD990094A260 /* StripeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC9B2912CD990094A260 /* StripeViewController.xib */; };
-		AF47FC9F2912CDF50094A260 /* StripeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9E2912CDF50094A260 /* StripeViewOutput.swift */; };
-		AF47FCA12912CE070094A260 /* StripeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA02912CE070094A260 /* StripeViewInput.swift */; };
+		AF47FC9C2912CD990094A260 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9A2912CD990094A260 /* FeedViewController.swift */; };
+		AF47FC9D2912CD990094A260 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC9B2912CD990094A260 /* FeedViewController.xib */; };
+		AF47FC9F2912CDF50094A260 /* FeedViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9E2912CDF50094A260 /* FeedViewOutput.swift */; };
+		AF47FCA12912CE070094A260 /* FeedViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA02912CE070094A260 /* FeedViewInput.swift */; };
 		AF47FCA32912CE200094A260 /* StripePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA22912CE200094A260 /* StripePresenter.swift */; };
 		AF47FCA62912D04B0094A260 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA52912D04B0094A260 /* NetworkManager.swift */; };
 		AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA72912D0760094A260 /* MovieRequestEntity.swift */; };
 		AF47FCAB2912D0A00094A260 /* MovieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCAA2912D0A00094A260 /* MovieCategory.swift */; };
 		AF47FCAE2912D0D20094A260 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCAD2912D0D20094A260 /* Strings.swift */; };
-		AF47FCB22912D1B30094A260 /* StripeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */; };
-		AF47FCB32912D1B30094A260 /* StripeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */; };
+		AF47FCB22912D1B30094A260 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB02912D1B30094A260 /* FeedTableViewCell.swift */; };
+		AF47FCB32912D1B30094A260 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCB12912D1B30094A260 /* FeedTableViewCell.xib */; };
 		AF47FCB72912D2350094A260 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCB62912D2350094A260 /* DetailPresenter.swift */; };
 		AF47FCC02912D2450094A260 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */; };
 		AF47FCC12912D2450094A260 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */; };
@@ -38,6 +38,7 @@
 		AF51DEC029142025005B2B65 /* DetailRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51DEBF29142025005B2B65 /* DetailRowType.swift */; };
 		AF51DEC329142411005B2B65 /* DetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51DEC129142411005B2B65 /* DetailInfoTableViewCell.swift */; };
 		AF51DEC429142411005B2B65 /* DetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF51DEC229142411005B2B65 /* DetailInfoTableViewCell.xib */; };
+		AF67F1DC29156EE0000D3BD5 /* Extentions+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67F1DB29156EE0000D3BD5 /* Extentions+UITableViewCell.swift */; };
 		DEE7775A75973801733F6AAE /* Pods_TestTaskLampa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFB7D2ABC7B0F3A8B9E7B44 /* Pods_TestTaskLampa.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,17 +56,17 @@
 		AF47FC872912CB9B0094A260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF47FC892912CB9B0094A260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF47FC982912CD690094A260 /* StripeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAssembly.swift; sourceTree = "<group>"; };
-		AF47FC9A2912CD990094A260 /* StripeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewController.swift; sourceTree = "<group>"; };
-		AF47FC9B2912CD990094A260 /* StripeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StripeViewController.xib; sourceTree = "<group>"; };
-		AF47FC9E2912CDF50094A260 /* StripeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewOutput.swift; sourceTree = "<group>"; };
-		AF47FCA02912CE070094A260 /* StripeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewInput.swift; sourceTree = "<group>"; };
+		AF47FC9A2912CD990094A260 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		AF47FC9B2912CD990094A260 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		AF47FC9E2912CDF50094A260 /* FeedViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewOutput.swift; sourceTree = "<group>"; };
+		AF47FCA02912CE070094A260 /* FeedViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewInput.swift; sourceTree = "<group>"; };
 		AF47FCA22912CE200094A260 /* StripePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripePresenter.swift; sourceTree = "<group>"; };
 		AF47FCA52912D04B0094A260 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AF47FCA72912D0760094A260 /* MovieRequestEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRequestEntity.swift; sourceTree = "<group>"; };
 		AF47FCAA2912D0A00094A260 /* MovieCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCategory.swift; sourceTree = "<group>"; };
 		AF47FCAD2912D0D20094A260 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeTableViewCell.swift; sourceTree = "<group>"; };
-		AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StripeTableViewCell.xib; sourceTree = "<group>"; };
+		AF47FCB02912D1B30094A260 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		AF47FCB12912D1B30094A260 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		AF47FCB62912D2350094A260 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		AF47FCBA2912D2450094A260 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		AF47FCBB2912D2450094A260 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		AF51DEBF29142025005B2B65 /* DetailRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowType.swift; sourceTree = "<group>"; };
 		AF51DEC129142411005B2B65 /* DetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoTableViewCell.swift; sourceTree = "<group>"; };
 		AF51DEC229142411005B2B65 /* DetailInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInfoTableViewCell.xib; sourceTree = "<group>"; };
+		AF67F1DB29156EE0000D3BD5 /* Extentions+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+UITableViewCell.swift"; sourceTree = "<group>"; };
 		FF3517C459B8A7263160AFFC /* Pods-TestTaskLampa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLampa.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskLampa/Pods-TestTaskLampa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				AF345B162913EF880054B665 /* Extentions+UIView.swift */,
+				AF67F1DB29156EE0000D3BD5 /* Extentions+UITableViewCell.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -112,10 +115,10 @@
 		AF47FC6F2912CB990094A260 = {
 			isa = PBXGroup;
 			children = (
-				AF47FC7A2912CB990094A260 /* TestTaskLampa */,
-				AF47FC792912CB990094A260 /* Products */,
-				684DB6DE1CAA07B724DD870D /* Pods */,
 				C7AD7BC0593B627E1D1EB051 /* Frameworks */,
+				684DB6DE1CAA07B724DD870D /* Pods */,
+				AF47FC792912CB990094A260 /* Products */,
+				AF47FC7A2912CB990094A260 /* TestTaskLampa */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,7 +171,7 @@
 			children = (
 				AF47FC952912CD0C0094A260 /* TabBarController */,
 				AF47FC942912CCDA0094A260 /* DetailViewController */,
-				AF47FC932912CCAC0094A260 /* StripeViewController */,
+				AF47FC932912CCAC0094A260 /* FeedViewController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -181,14 +184,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		AF47FC932912CCAC0094A260 /* StripeViewController */ = {
+		AF47FC932912CCAC0094A260 /* FeedViewController */ = {
 			isa = PBXGroup;
 			children = (
 				AF47FC972912CD520094A260 /* View */,
 				AF47FC962912CD490094A260 /* Presenter */,
 				AF47FC982912CD690094A260 /* StripeAssembly.swift */,
 			);
-			path = StripeViewController;
+			path = FeedViewController;
 			sourceTree = "<group>";
 		};
 		AF47FC942912CCDA0094A260 /* DetailViewController */ = {
@@ -220,11 +223,11 @@
 		AF47FC972912CD520094A260 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AF47FCAF2912D18A0094A260 /* StripeViewCell */,
-				AF47FC9A2912CD990094A260 /* StripeViewController.swift */,
-				AF47FC9B2912CD990094A260 /* StripeViewController.xib */,
-				AF47FC9E2912CDF50094A260 /* StripeViewOutput.swift */,
-				AF47FCA02912CE070094A260 /* StripeViewInput.swift */,
+				AF47FCAF2912D18A0094A260 /* FeedViewCell */,
+				AF47FC9A2912CD990094A260 /* FeedViewController.swift */,
+				AF47FC9B2912CD990094A260 /* FeedViewController.xib */,
+				AF47FC9E2912CDF50094A260 /* FeedViewOutput.swift */,
+				AF47FCA02912CE070094A260 /* FeedViewInput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,13 +257,13 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
-		AF47FCAF2912D18A0094A260 /* StripeViewCell */ = {
+		AF47FCAF2912D18A0094A260 /* FeedViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				AF47FCB02912D1B30094A260 /* StripeTableViewCell.swift */,
-				AF47FCB12912D1B30094A260 /* StripeTableViewCell.xib */,
+				AF47FCB02912D1B30094A260 /* FeedTableViewCell.swift */,
+				AF47FCB12912D1B30094A260 /* FeedTableViewCell.xib */,
 			);
-			path = StripeViewCell;
+			path = FeedViewCell;
 			sourceTree = "<group>";
 		};
 		AF47FCB42912D2080094A260 /* View */ = {
@@ -370,11 +373,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF47FC9D2912CD990094A260 /* StripeViewController.xib in Resources */,
+				AF47FC9D2912CD990094A260 /* FeedViewController.xib in Resources */,
 				AF345B142913E33F0054B665 /* DetailViewController.xib in Resources */,
 				AF47FCC12912D2450094A260 /* DetailTableViewCell.xib in Resources */,
 				AF47FC882912CB9B0094A260 /* LaunchScreen.storyboard in Resources */,
-				AF47FCB32912D1B30094A260 /* StripeTableViewCell.xib in Resources */,
+				AF47FCB32912D1B30094A260 /* FeedTableViewCell.xib in Resources */,
 				AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */,
 				AF51DEC429142411005B2B65 /* DetailInfoTableViewCell.xib in Resources */,
 				AF4E9714291404A1002F25DD /* Raleway-Font.ttf in Resources */,
@@ -434,11 +437,12 @@
 				AF47FC7C2912CB990094A260 /* AppDelegate.swift in Sources */,
 				AF47FCAE2912D0D20094A260 /* Strings.swift in Sources */,
 				AF47FCC02912D2450094A260 /* DetailTableViewCell.swift in Sources */,
-				AF47FC9F2912CDF50094A260 /* StripeViewOutput.swift in Sources */,
+				AF47FC9F2912CDF50094A260 /* FeedViewOutput.swift in Sources */,
 				AF47FCAB2912D0A00094A260 /* MovieCategory.swift in Sources */,
 				AF47FCA32912CE200094A260 /* StripePresenter.swift in Sources */,
 				AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */,
-				AF47FCB22912D1B30094A260 /* StripeTableViewCell.swift in Sources */,
+				AF67F1DC29156EE0000D3BD5 /* Extentions+UITableViewCell.swift in Sources */,
+				AF47FCB22912D1B30094A260 /* FeedTableViewCell.swift in Sources */,
 				AF345B102913D9C80054B665 /* TabBarController.swift in Sources */,
 				AF345B132913E33F0054B665 /* DetailViewController.swift in Sources */,
 				AF345B172913EF880054B665 /* Extentions+UIView.swift in Sources */,
@@ -449,9 +453,9 @@
 				AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */,
 				AF47FCB72912D2350094A260 /* DetailPresenter.swift in Sources */,
 				AF47FCC42912D2450094A260 /* DetailInput.swift in Sources */,
-				AF47FC9C2912CD990094A260 /* StripeViewController.swift in Sources */,
+				AF47FC9C2912CD990094A260 /* FeedViewController.swift in Sources */,
 				AF47FCC62912D24E0094A260 /* DetailAssembly.swift in Sources */,
-				AF47FCA12912CE070094A260 /* StripeViewInput.swift in Sources */,
+				AF47FCA12912CE070094A260 /* FeedViewInput.swift in Sources */,
 				AF51DEC029142025005B2B65 /* DetailRowType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

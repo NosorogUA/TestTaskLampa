@@ -9,8 +9,8 @@ import Foundation
 
 struct StripeAssembly {
     
-    func make(category: MovieCategory) -> StripeViewController {
-        let viewController = StripeViewController()
+    func make(category: MovieCategory) -> FeedViewController {
+        let viewController = FeedViewController()
         let dataManager = NetworkManager()
         let presenter = StripePresenter(view: viewController, dataManager: dataManager, category: category)
         viewController.presenter = presenter

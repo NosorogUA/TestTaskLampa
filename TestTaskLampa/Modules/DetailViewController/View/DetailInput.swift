@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol DetailInput {
+protocol DetailInput: AnyObject {
 
 }

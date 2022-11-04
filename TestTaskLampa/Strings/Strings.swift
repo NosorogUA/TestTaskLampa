@@ -14,7 +14,7 @@ struct Strings {
         static let description = "Description"
         static let rating = "Rating"
         static let popular = "Home"
-        static let nowPlaying = "Now Playing"
+        static let showMovie = "Show movie"
         static let favorite = "Favorite"
         static let networkError = "Network Error"
         static let refresh =  "Refresh"

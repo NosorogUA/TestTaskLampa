@@ -8,6 +8,9 @@
 import Foundation
 
 enum DetailRowType: Int {
+    static var allCases: [DetailRowType] {
+        return [.poster, .description]
+        }
    case poster
    case description
 }

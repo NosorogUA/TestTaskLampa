@@ -1,5 +1,5 @@
 //
-//  extentions+UIView.swift
+//  Extentions+UIView.swift
 //  TestTaskLampa
 //
 //  Created by Ihor Tokalenko on 03.11.2022.

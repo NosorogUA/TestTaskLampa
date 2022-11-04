@@ -18,13 +18,8 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         activityIndicator.hidesWhenStopped = true
         setupNavigationBar()
-        setupTableview()
+        setupView()
         loadData()        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        tabBarController?.tabBar.isHidden = false
     }
     
     private func loadData() {
@@ -38,7 +33,7 @@ class FeedViewController: UIViewController {
         self.navigationItem.titleView?.contentMode = .scaleAspectFit
     }
     
-    private func setupTableview() {
+    private func setupView() {
         view.backgroundColor = UISettings.Color.background
         tableView.backgroundColor = .clear
         tableView.delegate = self

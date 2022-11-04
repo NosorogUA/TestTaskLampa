@@ -21,9 +21,9 @@ class TabBarController: UITabBarController {
     }
     
     private func setupVC() {
-        let stripeAssembly = StripeAssembly()
-        let homeVC = stripeAssembly.make(category: MovieCategory.home)
-        let favoriteVC = stripeAssembly.make(category: MovieCategory.topRated)
+        let feedAssembly = FeedAssembly()
+        let homeVC = feedAssembly.make(category: MovieCategory.home)
+        let favoriteVC = feedAssembly.make(category: MovieCategory.topRated)
         viewControllers = [
             createNavController(for: homeVC, title: Strings.Headers.popular, image: UIImage(systemName: "house")!),
             createNavController(for: favoriteVC, title: Strings.Headers.favorite, image: UIImage(systemName: "star")!)

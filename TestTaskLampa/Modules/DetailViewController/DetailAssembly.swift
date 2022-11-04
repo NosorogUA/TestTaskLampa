@@ -11,7 +11,8 @@ struct DetailAssembly {
     
     func make(movieInfo: Movie) -> DetailViewController {
         let viewController = DetailViewController()
-        let presenter = DetailPresenter(view: viewController, movieInfo: movieInfo)
+        let dataManager = NetworkManager()
+        let presenter = DetailPresenter(view: viewController, movieInfo: movieInfo, dataManager: dataManager)
         viewController.presenter = presenter
         return viewController
     }

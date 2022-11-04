@@ -10,11 +10,13 @@ import Foundation
 class DetailPresenter: DetailOutput {
     
     private unowned let view: DetailInput
+    private let dataManager: NetworkManager
     private let movie: Movie
        
-    init(view: DetailInput, movieInfo: Movie) {
+    init(view: DetailInput, movieInfo: Movie, dataManager: NetworkManager) {
         self.view = view
         self.movie = movieInfo
+        self.dataManager = dataManager
     }
     
     func getSectionsCount() -> Int {
@@ -32,7 +34,7 @@ class DetailPresenter: DetailOutput {
     func configureDetailCell(_ cell: DetailTableViewCell) {
         var url = ""
         if let posterPath = movie.posterPath {
-            url = "https://image.tmdb.org/t/p/w500\(posterPath)"
+            url = dataManager.getImageURL(posterPath)
         }
         cell.setup(title: movie.title, rating: movie.voteAverage, imageUrl: URL(string: url))
     }
@@ -42,7 +44,10 @@ class DetailPresenter: DetailOutput {
         inputFormatter.dateFormat = "YYYY-MM-DD"
         let showDate = inputFormatter.date(from: movie.releaseDate)
         inputFormatter.dateFormat = "DD.MM.YYYY"
-        let date = inputFormatter.string(from: showDate!)
+        var date = ""
+        if let currentDate = showDate {
+            date = inputFormatter.string(from: currentDate)
+        }        
         cell.setup(description: movie.overview, year: date)
     }
 }

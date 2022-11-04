@@ -1,5 +1,5 @@
 //
-//  StripePresenter.swift
+//  FeedPresenter.swift
 //  TestTaskLampa
 //
 //  Created by Ihor Tokalenko on 02.11.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class StripePresenter: FeedViewOutput {
+class FeedPresenter: FeedViewOutput {
     
     var isPaginating = false
     
@@ -51,9 +51,11 @@ class StripePresenter: FeedViewOutput {
         inputFormatter.dateFormat = "YYYY-MM-DD"
         let showDate = inputFormatter.date(from: movie.releaseDate)
         inputFormatter.dateFormat = "DD.MM.YYYY"
-        let date = inputFormatter.string(from: showDate!)
-        
+        var date = ""
         var url = ""
+        if let currentDate = showDate {
+            date = inputFormatter.string(from: currentDate)
+        }
         if let posterPath = movie.posterPath {
             url = dataManager.getImageURL(posterPath)
         }

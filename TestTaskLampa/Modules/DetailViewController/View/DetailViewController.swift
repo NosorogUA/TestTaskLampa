@@ -15,9 +15,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tabBarController?.tabBar.isHidden = true // Hide tab bar if need
         setupNavigationBar()
-        setupTableview()
+        setupView()
     }
     
     private func setupNavigationBar() {
@@ -27,8 +26,8 @@ class DetailViewController: UIViewController {
         self.navigationItem.titleView?.contentMode = .scaleAspectFit
     }
     
-    private func setupTableview() {
-        view.backgroundColor = UIColor(red: 0.043, green: 0.016, blue: 0.188, alpha: 1)
+    private func setupView() {
+        view.backgroundColor = UISettings.Color.background
         tableView.backgroundColor = .clear
         tableView.delegate = self
         tableView.dataSource = self

@@ -15,12 +15,12 @@
 		AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC7D2912CB990094A260 /* SceneDelegate.swift */; };
 		AF47FC852912CB9B0094A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC842912CB9B0094A260 /* Assets.xcassets */; };
 		AF47FC882912CB9B0094A260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC862912CB9B0094A260 /* LaunchScreen.storyboard */; };
-		AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC982912CD690094A260 /* StripeAssembly.swift */; };
+		AF47FC992912CD690094A260 /* FeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC982912CD690094A260 /* FeedAssembly.swift */; };
 		AF47FC9C2912CD990094A260 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9A2912CD990094A260 /* FeedViewController.swift */; };
 		AF47FC9D2912CD990094A260 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF47FC9B2912CD990094A260 /* FeedViewController.xib */; };
 		AF47FC9F2912CDF50094A260 /* FeedViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FC9E2912CDF50094A260 /* FeedViewOutput.swift */; };
 		AF47FCA12912CE070094A260 /* FeedViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA02912CE070094A260 /* FeedViewInput.swift */; };
-		AF47FCA32912CE200094A260 /* StripePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA22912CE200094A260 /* StripePresenter.swift */; };
+		AF47FCA32912CE200094A260 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA22912CE200094A260 /* FeedPresenter.swift */; };
 		AF47FCA62912D04B0094A260 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA52912D04B0094A260 /* NetworkManager.swift */; };
 		AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCA72912D0760094A260 /* MovieRequestEntity.swift */; };
 		AF47FCAB2912D0A00094A260 /* MovieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47FCAA2912D0A00094A260 /* MovieCategory.swift */; };
@@ -55,12 +55,12 @@
 		AF47FC842912CB9B0094A260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF47FC872912CB9B0094A260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF47FC892912CB9B0094A260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF47FC982912CD690094A260 /* StripeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAssembly.swift; sourceTree = "<group>"; };
+		AF47FC982912CD690094A260 /* FeedAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAssembly.swift; sourceTree = "<group>"; };
 		AF47FC9A2912CD990094A260 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AF47FC9B2912CD990094A260 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		AF47FC9E2912CDF50094A260 /* FeedViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewOutput.swift; sourceTree = "<group>"; };
 		AF47FCA02912CE070094A260 /* FeedViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewInput.swift; sourceTree = "<group>"; };
-		AF47FCA22912CE200094A260 /* StripePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripePresenter.swift; sourceTree = "<group>"; };
+		AF47FCA22912CE200094A260 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		AF47FCA52912D04B0094A260 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AF47FCA72912D0760094A260 /* MovieRequestEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRequestEntity.swift; sourceTree = "<group>"; };
 		AF47FCAA2912D0A00094A260 /* MovieCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCategory.swift; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 			children = (
 				AF47FC972912CD520094A260 /* View */,
 				AF47FC962912CD490094A260 /* Presenter */,
-				AF47FC982912CD690094A260 /* StripeAssembly.swift */,
+				AF47FC982912CD690094A260 /* FeedAssembly.swift */,
 			);
 			path = FeedViewController;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 		AF47FC962912CD490094A260 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				AF47FCA22912CE200094A260 /* StripePresenter.swift */,
+				AF47FCA22912CE200094A260 /* FeedPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -439,7 +439,7 @@
 				AF47FCC02912D2450094A260 /* DetailTableViewCell.swift in Sources */,
 				AF47FC9F2912CDF50094A260 /* FeedViewOutput.swift in Sources */,
 				AF47FCAB2912D0A00094A260 /* MovieCategory.swift in Sources */,
-				AF47FCA32912CE200094A260 /* StripePresenter.swift in Sources */,
+				AF47FCA32912CE200094A260 /* FeedPresenter.swift in Sources */,
 				AF47FC7E2912CB990094A260 /* SceneDelegate.swift in Sources */,
 				AF67F1DC29156EE0000D3BD5 /* Extentions+UITableViewCell.swift in Sources */,
 				AF47FCB22912D1B30094A260 /* FeedTableViewCell.swift in Sources */,
@@ -450,7 +450,7 @@
 				AF47FCA82912D0760094A260 /* MovieRequestEntity.swift in Sources */,
 				AF4E971629140584002F25DD /* UISettings.swift in Sources */,
 				AF51DEC329142411005B2B65 /* DetailInfoTableViewCell.swift in Sources */,
-				AF47FC992912CD690094A260 /* StripeAssembly.swift in Sources */,
+				AF47FC992912CD690094A260 /* FeedAssembly.swift in Sources */,
 				AF47FCB72912D2350094A260 /* DetailPresenter.swift in Sources */,
 				AF47FCC42912D2450094A260 /* DetailInput.swift in Sources */,
 				AF47FC9C2912CD990094A260 /* FeedViewController.swift in Sources */,

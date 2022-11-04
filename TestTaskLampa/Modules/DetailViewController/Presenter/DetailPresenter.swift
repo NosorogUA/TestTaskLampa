@@ -43,7 +43,6 @@ class DetailPresenter: DetailOutput {
         let showDate = inputFormatter.date(from: movie.releaseDate)
         inputFormatter.dateFormat = "DD.MM.YYYY"
         let date = inputFormatter.string(from: showDate!)
-        print(date)
         cell.setup(description: movie.overview, year: date)
     }
 }

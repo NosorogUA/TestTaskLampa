@@ -14,8 +14,10 @@ class DetailTableViewCell: UITableViewCell {
     @IBOutlet private weak var ratingTextLabel: UILabel!
     @IBOutlet private weak var posterImageView: UIImageView!
     @IBOutlet private weak var starImageView: UIImageView!
+    @IBOutlet private weak var playButton: UIButton!
     
     private let gradientLayer = CAGradientLayer()
+    var buttonHandler: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,11 +40,12 @@ class DetailTableViewCell: UITableViewCell {
     private func setupUI() {
         let titleFont = UIFont(name: UISettings.Font.boldFontName, size: 14)
         let descriptionLabelFont = UIFont(name: UISettings.Font.semiboldFontName, size: 12)
-        
+        //apply fonts
         titleTextLabel.font = titleFont
         titleTextLabel.textColor = UISettings.Color.white
         ratingTextLabel.font = descriptionLabelFont
         ratingTextLabel.textColor = UISettings.Color.white
+        playButton.imageView?.contentMode = .scaleAspectFit
     }
     
     func setup(title: String,  rating: Float, imageUrl: URL?) {
@@ -56,5 +59,10 @@ class DetailTableViewCell: UITableViewCell {
         titleTextLabel.text = nil
         ratingTextLabel.text = nil
         posterImageView.image = nil
+    }
+    
+    @IBAction func playButtonAction(_ sender: Any) {
+        // show alert
+        buttonHandler?()
     }
 }

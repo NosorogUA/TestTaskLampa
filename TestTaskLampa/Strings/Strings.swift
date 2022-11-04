@@ -19,5 +19,6 @@ struct Strings {
         static let networkError = "Network Error"
         static let refresh =  "Refresh"
         static let close = "Close"
+        static let ok = "OK"
     }
 }

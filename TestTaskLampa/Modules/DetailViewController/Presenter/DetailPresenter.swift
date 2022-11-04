@@ -25,6 +25,11 @@ class DetailPresenter: DetailOutput {
         return 2
     }
     
+    func getTitle()-> String {
+        let name = movie.title
+        return name
+    }
+    
     func configureDetailCell(_ cell: DetailTableViewCell) {
         guard let posterPath = movie.posterPath else { return }
         let url = "https://image.tmdb.org/t/p/w500\(posterPath)"

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,6 +52,22 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3f-7a-00D">
+                        <rect key="frame" x="165.5" y="85.5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="hBw-x2-x3a"/>
+                            <constraint firstAttribute="height" constant="100" id="jgD-0A-QtW"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
+                            <imageReference key="image" image="play.circle" catalog="system" symbolScale="large" renderingMode="template"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                            <color key="baseForegroundColor" red="1" green="0.61176470589999998" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="playButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zeW-N9-mS9"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="bottomMargin" secondItem="X1s-cs-O7D" secondAttribute="bottom" constant="8" id="8OG-kP-G3m"/>
@@ -58,17 +75,20 @@
                     <constraint firstItem="95M-oA-wYB" firstAttribute="leading" secondItem="NAN-Ux-7ha" secondAttribute="leading" constant="16" id="G3h-w0-5Op"/>
                     <constraint firstAttribute="trailing" secondItem="NAN-Ux-7ha" secondAttribute="trailing" constant="16" id="Ghq-jm-bPv"/>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="GlJ-U2-mSZ"/>
+                    <constraint firstItem="u3f-7a-00D" firstAttribute="centerX" secondItem="NAN-Ux-7ha" secondAttribute="centerX" id="L1l-yZ-5rX"/>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WqE-GA-61M"/>
                     <constraint firstItem="X1s-cs-O7D" firstAttribute="leading" secondItem="JQE-sf-zkz" secondAttribute="trailing" constant="5" id="Zf8-gO-K7E"/>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="bottom" secondItem="95M-oA-wYB" secondAttribute="bottom" constant="16" id="a3B-WH-qk1"/>
                     <constraint firstItem="NAN-Ux-7ha" firstAttribute="bottomMargin" secondItem="JQE-sf-zkz" secondAttribute="bottom" constant="8" id="cxi-D9-u5H"/>
                     <constraint firstItem="JQE-sf-zkz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="95M-oA-wYB" secondAttribute="trailing" constant="20" id="egh-O5-NJB"/>
                     <constraint firstAttribute="trailingMargin" secondItem="X1s-cs-O7D" secondAttribute="trailing" constant="8" id="iOq-E9-lUz"/>
+                    <constraint firstItem="u3f-7a-00D" firstAttribute="centerY" secondItem="NAN-Ux-7ha" secondAttribute="centerY" id="yTH-ef-gat"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="playButton" destination="u3f-7a-00D" id="0dT-2J-qCC"/>
                 <outlet property="posterImageView" destination="NAN-Ux-7ha" id="Eo2-7i-Ytd"/>
                 <outlet property="ratingTextLabel" destination="JQE-sf-zkz" id="q8x-l8-m8G"/>
                 <outlet property="starImageView" destination="X1s-cs-O7D" id="CyG-Ef-NUU"/>
@@ -78,6 +98,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -13,6 +13,7 @@ class DetailViewController: UIViewController {
     var presenter: DetailOutput!
     private let detailCellID = "DetailTableViewCell"
     private let detailInfoCellId = "DetailInfoTableViewCell"
+    let name: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,14 @@ class DetailViewController: UIViewController {
         tableView.estimatedRowHeight = 600
         tableView.rowHeight = UITableView.automaticDimension
     }
+    
+    //MARK: Alert
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Show movie", message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: Strings.Headers.ok, style: .default, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 // MARK: - Table view data source
@@ -63,6 +72,9 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         case .poster:
             let cell = tableView.dequeueReusableCell(withIdentifier: detailCellID, for: indexPath) as! DetailTableViewCell
             presenter.configureDetailCell(cell)
+            cell.buttonHandler = { [weak self] in
+                self?.showAlert(message: self?.presenter.getTitle() ?? "no title")
+            }
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
             return cell
         case .description:

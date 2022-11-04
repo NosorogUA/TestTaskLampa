@@ -10,6 +10,7 @@ import Foundation
 protocol DetailOutput {
     func getSectionsCount() -> Int
     func getRowsCount(_ section: Int) -> Int
+    func getTitle()-> String
     func configureDetailCell(_ cell: DetailTableViewCell)
     func configureDetailInfoCell(_ cell: DetailInfoTableViewCell)    
 }

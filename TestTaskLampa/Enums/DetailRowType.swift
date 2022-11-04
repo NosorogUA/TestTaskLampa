@@ -7,10 +7,7 @@
 
 import Foundation
 
-enum DetailRowType: Int {
-    static var allCases: [DetailRowType] {
-        return [.poster, .description]
-        }
+enum DetailRowType: Int, CaseIterable {
    case poster
    case description
 }
